@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrations Made Easy</title>
+    {% load static %}
+    <!-- Prism CSS -->
+    <link href="{% static 'tinymce/css/prism.css' %}" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <link href="{% static 'main/CSS/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'main/CSS/style.css' %}" rel="stylesheet">
+        <link href="{% static 'main/CSS/fractionslider.css' %}" rel="stylesheet">
+        <link href="{% static 'main/CSS/style-fraction.css' %}" rel="stylesheet">
+        <link href="{% static 'main/CSS/animate.css' %} " rel="stylesheet">
+
+</head>
+<body>
+   <nav>
+
+    <div class="nav-wrapper navbar-static-top" role="navigation">
+          <a href='/' class='brand-logo' color="red">REGISTRATIONS MADE EASY</a>
+      <ul id='nav-mobile' class='right hide-on-med-and-down'>
+        {% include 'main/includes/navbaritems.html' %}
+      </ul>
+    </div>
+
+  </nav>
+   <!--start wrapper-->
+            <section class="wrapper">
+                <div class="slider-wrapper">
+                    <div class="slider"><div class="fraction-slider" style="overflow: visible; width: auto; height: auto;">
+
+                        <div class="slide slide1 active-slide" style="left: 0%; top: 0%; display: block;">
+                            <img src="{% static 'main/images/carousel_1.jpg' %}" width="100%" height="NaN%" data-in="fade" data-out="fade" rel="0" class="fs_obj fs_obj_active" style="width: 100%; font-size: 9.8px; line-height: 100%; opacity: 1; top: 0%; left: 0%; display: inline;" data-fontsize="14px">
+                    </div>
+
+                    <div class="slide slide2" style="left: 0%; top: 0%; display: none;">
+                        <img src="{% static 'main/images/carousel_2.jpg' %}" width="100%" height="NaN%" data-in="fade" data-out="fade" rel="1" class="fs_obj fs_obj_active" style="width: 100%; font-size: 9.8px; line-height: 100%; opacity: 1; top: 0%; left: 0%; display: inline;" data-fontsize="14px">
+                    </div>
+
+                    <div class="slide slide3" style="left: 0%; top: 0%; display: none;">
+                        <img src="{% static 'main/images/carousel_3.jpg' %}" width="100%" height="NaN%" data-in="fade" data-out="fade" rel="2" class="fs_obj fs_obj_active" style="width: 100%; font-size: 9.8px; line-height: 100%; opacity: 1; top: 0%; left: 0%; display: inline;" data-fontsize="14px">
+                    </div>
+                    <div class="slide slide4" style="left: 0%; top: 0%; display: none;">
+                        <img src="{% static 'main//images/carousel_4.jpg' %}" width="100%" height="NaN%" data-in="fade" data-out="fade" rel="3" class="fs_obj fs_obj_active" style="width: 100%; font-size: 9.8px; line-height: 100%; opacity: 1; top: 0%; left: 0%; display: inline;" data-fontsize="14px">
+                    </div>
+                    <div class="slide slide5" style="left: 0%; top: 0%; display: none;">
+                        <img src="{% static 'main/images/carousel_5.jpg' %}" width="100%" height="NaN%" data-in="fade" data-out="fade" rel="4" class="fs_obj fs_obj_active" style="width: 100%; font-size: 9.8px; line-height: 100%; opacity: 1; top: 0%; left: 0%; display: inline;" data-fontsize="14px">
+                    </div>
+                    <div class="slide slide6" style="left: 0%; top: 0%; display: none;">
+                        <img src="{% static 'main/images/carousel_6.jpg' %}" width="100%" height="NaN%" data-in="fade" data-out="fade" rel="5" class="fs_obj fs_obj_active" style="width: 100%; font-size: 9.8px; line-height: 100%; opacity: 1; top: 0%; left: 0%; display: inline;" data-fontsize="14px">
+                    </div>
+                    <div class="slide slide7" style="left: 0%; top: 0%; display: none;">
+                        <img src="{% static 'main/images/carousel_7.jpg' %}" width="100%" height="NaN%" data-in="fade" data-out="fade" rel="6" class="fs_obj fs_obj_active" style="width: 100%; font-size: 9.8px; line-height: 100%; opacity: 1; top: 0%; left: 0%; display: inline;" data-fontsize="14px">
+                    </div>
+                <a href="#" class="prev"></a><a href="#" class="next"></a><div class="fs-stretcher" style="width: 1345px; height: 315.234px;"></div>
+                    </div>
+                    </div>
+                    </div>
+            <!--End Slider-->
+        </section>
+
+    <section class="topnews">
+            <div class="wow fadeInDown container-fluid animated" style="padding: 0px; visibility: visible; animation-name: fadeInDown;">
+                <div class="container events">
+                    <span>
+                        <h5>   News &amp; Events</h5>
+                    </span>
+                    <span>
+                        <marquee width="100%" direction="left" height="36px" class="sl" onmouseover="this.stop();" onmouseout="this.start();" behavior="alternate">
+                            <div class="sin">
+                                <strong>
+                                    <p>
+                                        <i class="fa fa-asterisk" aria-hidden="true" style="color:#d9a504;"></i>  WELCOME TO REGISTRATIONS MADE EASY <i class="fa fa-asterisk" aria-hidden="true" style="color:#d9a504;"></i>&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-asterisk" aria-hidden="true" style="color:#d9a504;"></i> WE ARE GOING TO SERVE YOU SOON-  <i class="fa fa-asterisk" aria-hidden="true" style="color:#d9a504;"></i>&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                                    </p>
+                                </strong>
+                                <br><br>
+                            </div>
+                        </marquee>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+
+
+  {% include 'main/includes/messaging.html' %}
+  <div class="container">
+  {% block content %}
+  {% endblock %}
+  </div>
+
+
+
+        <!--start footer-->
+<div class="container-fluid footer">
+    <div class="container">
+        <div class="col-sm-6 col-xs-8 dd">
+            <center> <p class="copyright">Designed &amp; Developed by  <a href="#" target="#">VENKATESH RAVULA</a></p> </center>
+        </div>
+        <div class="col-sm-6 col-xs-4">
+            <div class="footer_social">
+                <ul class="footbot_social">
+                    <li><a class="fb" href="https://fb.com#" target="_self" data-placement="top" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="twtr" href="https://twitter.com#" target="_self" data-placement="top" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="google" href="https://goole.com#" target="_self" data-placement="top" data-toggle="tooltip" title="Google+"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+        <script src="{% static 'main/JS/wow.min.js.download' %}"></script>
+        <script src="{% static 'main/JS/jquery-1.10.2.min.js.download' %}"></script>
+        <script src="{% static 'main/JS/bootstrap.min.js.download' %}"></script>
+        <script src="{% static 'main/JS/jquery.fractionslider.js.download' %}"></script>
+        <script src="{% static 'main/JS/jquery.smartmenus.min.js.download' %}"></script>
+        <script src="{% static 'main/JS/jquery.smartmenus.bootstrap.min.js.download' %}"></script>
+
+        <script>
+                            $(window).load(function () {
+                                $('.slider').fractionSlider({
+                                    'fullWidth': true,
+                                    'controls': true,
+                                    'responsive': true,
+                                    'dimensions': "1920,450",
+                                    'timeout': 5000,
+                                    'increase': true,
+                                    'pauseOnHover': true,
+                                    'slideEndAnimation': false,
+                                    'autoChange': true
+                                });
+                            });
+        </script>
+
+        <script>
+            var browser_name = '';
+            isIE = /*@cc_on!@*/false || !!document.documentMode;
+            isEdge = !isIE && !!window.StyleMedia;
+            if (navigator.userAgent.indexOf("Chrome") != -1 && !isEdge)
+            {
+                browser_name = 'chrome';
+            } else if (navigator.userAgent.indexOf("Safari") != -1 && !isEdge)
+            {
+                browser_name = 'safari';
+                if ($(window).width() > 768) {
+                    alert("Use Google Chrome for better experience of the site!");
+                }
+
+            } else if (navigator.userAgent.indexOf("Firefox") != -1)
+            {
+                browser_name = 'firefox';
+                if ($(window).width() > 768) {
+                    alert("Use Google Chrome for better experience of the site!");
+                }
+            } else if ((navigator.userAgent.indexOf("MSIE") != -1) || (!!document.documentMode == true)) //IF IE > 10
+            {
+                browser_name = 'ie';
+                if ($(window).width() > 768) {
+                    alert("Use Google Chrome for better experience of the site!");
+                }
+            } else if (isEdge)
+            {
+                browser_name = 'edge';
+                if ($(window).width() > 768) {
+                    alert("Use Google Chrome for better experience of the site!");
+                }
+            } else
+            {
+                browser_name = 'other-browser';
+                if ($(window).width() > 768) {
+                    alert("Use Google Chrome for better experience of the site!");
+                }
+            }
+            // alert("Browser--"+browser_name);
+        </script>
+
+        <script>
+            // WOW Animation
+            new WOW().init();
+        </script>
+        <!-- [endif]-->
+
+        <script>
+            function showUser() {
+
+                if (window.XMLHttpRequest) {
+                    // code for IE7+, Firefox, Chrome, Opera, Safari
+                    xmlhttp = new XMLHttpRequest();
+                } else { // code for IE6, IE5
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.onreadystatechange = function () {
+                    //alert("one");
+                    if (this.readyState === 4 && this.status === 200) {
+                        //alert("one 2::"+this.responseText);
+                        var myJsonString = JSON.parse(this.responseText);
+                        //alert("one 3::"+myJsonString);
+                        var text = "";
+                        //[{"display_head":"Test 3","display_view":"test3 Description","file_flag":"N","id":"201811271646747"},]
+                        for (var k = 0; k < myJsonString.length; k++) {
+                            var obj = myJsonString[k];
+                            //   alert(obj['id']);
+                            var view = '<div>';
+                            var heading = '<h4 style="margin-bottom: 0; font-weight:bold;">' + obj['display_head'] + ':</b></h4>';
+                            if (obj['file_flag'] === 'Y') {
+                                view = '<h4 style="color: #04a7a6 !important; margin-top: 0;"><a href="/viewpdf/' + obj['id'] + '" target="_blank">' + obj['display_view'] + '</a></h4>';
+                            } else {
+                                view = '<h4 style="color: #04a7a6 !important; margin-top: 0;"><a  target="_blank">' + obj['display_view'] + '</a></h4>';
+                            }
+                            text = text + heading + view + '<hr></div>';
+                           //alert("one 4 :::"+text);
+
+                        }
+                        document.getElementById('news_main').innerHTML = text;
+                    }
+                }
+                xmlhttp.open("GET", "/whatsnew", true);
+                xmlhttp.send();
+            }
+        </script>
+
+</body>
+
+<!-- Prism JS -->
+<script src="{% static 'tinymce/js/prism.js' %}"></script>
+</html>

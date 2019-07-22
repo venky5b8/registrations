@@ -1,0 +1,2585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="row">
+			<!-- Form -->
+			<div class="col-sm-6" id="formholder">
+				<div id="optcontainer" class="chidden">
+					<div class="alert alert-info">
+						<i class="glyphicon glyphicon-info-sign"></i> Your agreement draft has been submitted. You cannot edit your draft now.
+					</div>
+					<div class="formsection">
+						<b>Police Intimation Form</b>
+						<hr>
+						<div class="col-sm-12 formfield">
+							<p><a href="https://rentagreementregistration.com/downloads/Police_Verification_form_original.pdf" download="Plolice_Intimation.pdf" target="blank">Click here</a> To download the form.</p>
+						</div>
+						<div class="clr"></div>
+					</div>
+
+					<div class="formsection">
+						<b>Status of your Agreement</b>
+						<hr>
+						<div class="col-sm-12 formfield">
+							<a class="btn btn-warning" href="https://rentagreementregistration.com/status.php">Track</a>
+						</div>
+						<div class="clr"></div>
+					</div>
+				</div>
+
+				<div id="formcontainer">
+					<ul class="nav nav-tabs" style="text-align: center;" id="tabs">
+                                                    <li class="active"><a data-toggle="tab" href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#form1" aria-expanded="true"><img src="./Agreement Draft_files/landlord.png"><p id="tabtitle1" style="color: red;">Landlord</p></a></li>
+                            <li class=""><a data-toggle="tab" href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#form2" aria-expanded="false"><img src="./Agreement Draft_files/tenant.png"><p id="tabtitle2" style="color: red;">Tenant</p></a></li>
+                        						<li class=""><a data-toggle="tab" href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#form3" aria-expanded="false"><img src="./Agreement Draft_files/property.png"><p id="tabtitle3" style="color: red;">Property</p></a></li>
+						<li class=""><a data-toggle="tab" href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#form4" aria-expanded="false"><img src="./Agreement Draft_files/agreement.png"><p id="tabtitle4" style="color: red;">Agreement</p></a></li>
+                        <li class=""><a data-toggle="tab" href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#form7" aria-expanded="false"><img src="./Agreement Draft_files/agreement.png"><p id="tabtitle7">Clauses</p></a></li>
+						<li style="display: none;"><a data-toggle="tab" href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#form5"><img src="./Agreement Draft_files/witness.png"><p id="tabtitle5" style="color: green;">Udertaking</p></a></li>
+						<li><a data-toggle="tab" id="appointmentTab" href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#form6"><img src="./Agreement Draft_files/appointment.png"><p>Appointment</p></a></li>
+					</ul>
+
+					<div class="tab-content" style="portion:absolute;">
+						<div id="form1" class="tab-pane fade active in" style="height: 435px;">
+							<div class="formbody row" id="formLandlord" style="height: 385px;">
+								<div id="landlordFormList"></div>
+								<div class="alert alert-danger chidden" id="errorLandlord" style="display: block;">
+									<i class="glyphicon glyphicon-info-sign"></i> Please fill the appropriate data in highlighted fields.
+								</div>
+								<div class="alert alert-success chidden" id="successLandlord">
+									<i class="glyphicon glyphicon-ok"></i> Landlord added successfully.
+								</div>
+								<div class="formsection" id="tourStep2">
+                                    <div class="col-sm-2 formfield">
+                                        <p>Gender</p>
+                                        <select highlight-field="landlord-gender" fieldvalidator="gender" fieldvalidator-live="true" id="landlordGender" placeholder="gender" style="background:rgba(231, 76, 60,0.2);">
+                                            <option value="">Select</option>
+                                            <option value="Male">Male (Mr)</option>
+                                            <option value="Female">Female (Ms)</option>
+                                            <option value="Female (Mrs)">Female (Mrs)</option>
+                                        </select>
+                                    </div>
+									<div class="col-sm-4 formfield">
+										<p>Last Name <a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#" data-toggle="tooltip" tabindex="-1" data-placement="bottom" title="" data-original-title="As mentioned on Adhar card.">?</a></p>
+										<input type="text" highlight-field="landlord-lname" fieldvalidator="name" fieldvalidator-live="true" id="landlordLname" placeholder="" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-4 formfield">
+										<p>First Name <a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#" data-toggle="tooltip" tabindex="-1" data-placement="bottom" title="" data-original-title="As mentioned on Adhar card. + If any middle name mention here.">?</a></p>
+										<input type="text" highlight-field="landlord-fname" data-placement="bottom" fieldvalidator="name" fieldvalidator-live="true" placeholder="" id="landlordFname" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-2 formfield">
+										<p>Age</p>
+										<input type="number" placeholder="" highlight-field="landlord-age" fieldvalidator="age" fieldvalidator-live="true" id="landlordAge" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+
+									<div class="clr"></div>
+								</div>
+								<div class="formsection">
+									<div class="col-sm-6 formfield">
+										<p>UID (Adhar number)</p>
+										<input type="text" highlight-field="landlord-uid" fieldvalidator="text" placeholder="" fieldvalidator-live="true" id="landlordUid" style="border-bottom:1px solid #2ecc71;background:#fff;">
+									</div>
+									<div class="col-sm-6 formfield">
+										<p>PAN</p>
+										<input type="text" highlight-field="landlord-pan" placeholder="" fieldvalidator="pan" fieldvalidator-live="true" id="landlordPan" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="formsection">
+									<b>Contact Details</b>
+									<hr>
+									<div class="col-sm-6 formfield">
+										<p>Phone number <a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#" data-toggle="tooltip" tabindex="-1" title="" data-original-title="All updates will be shared on this number">?</a> </p>
+										<input type="text" highlight-field="landlord-phone" fieldvalidator="phone" fieldvalidator-live="true" id="landlordPhone" placeholder="" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-6 formfield">
+										<p>Email address <a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#" data-toggle="tooltip" tabindex="-1" title="" data-original-title="Registered agreement will be sent on this email.">?</a></p>
+										<input type="text" highlight-field="landlord-email" fieldvalidator="email" fieldvalidator-live="true" id="landlordEmail" placeholder="" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="formsection">
+									<b>Address (As mentioned on Adhar card)</b>
+									<hr>
+									<div class="col-sm-9 formfield">
+										<p>Building name</p>
+										<input type="text" highlight-field="landlord-bname" fieldvalidator="alphanumeric" fieldvalidator-live="true" id="landlordBname" placeholder="" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-3 formfield">
+										<p>Flat no.</p>
+										<input type="text" highlight-field="landlord-fno" fieldvalidator="alphanumeric" fieldvalidator-live="true" id="landlordFno" placeholder="" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-6 formfield">
+										<p>Road / Sector</p>
+										<input type="text" highlight-field="landlord-sector" fieldvalidator="alphanumeric" fieldvalidator-live="true" id="landlordSector" placeholder="" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-6 formfield">
+										<p>Location</p>
+										<input type="text" highlight-field="landlord-location" fieldvalidator="alphanumeric" fieldvalidator-live="true" id="landlordLocation" placeholder="" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-8 formfield">
+										<p>Village / City</p>
+										<input type="text" highlight-field="landlord-city" fieldvalidator="name" fieldvalidator-live="true" id="landlordCity" placeholder="" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-4 formfield">
+										<p>PIN</p>
+										<input type="text" highlight-field="landlord-pin" fieldvalidator="pin" fieldvalidator-live="true" id="landlordPin" placeholder="" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="formsection">
+									<b>Executing through <a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#" data-toggle="tooltip" tabindex="-1" title="" data-original-title="In case of Power of Attorney mention POA name.">?</a></b>
+									<hr>
+									<div class="col-sm-12 formfield">
+										<input type="checkbox" style="width:20px !important;float:left;" onclick="showPoa(this,&#39;landlord&#39;)" id="landlordPoa">
+										<p>Power Of Attorney</p>
+									</div>
+									<div id="landlordPoaDetail" class="chidden">
+										<div class="col-sm-3 formfield">
+											<p>POA Name : </p>
+										</div>
+										<div class="col-sm-6 formfield">
+											<input type="text" id="landlordPoaName" fieldvalidator="name" fieldvalidator-live="true" highlight-field="landlord-poa" placeholder="">
+										</div>
+										<div class="col-sm-12 formfield">
+											<p class="text text-info"><a class="text text-danger" href="https://rentagreementregistration.com/downloads/poa_procedure.pdf" target="_blank" download="poa_procedure.pdf">Click here</a> To know the procedure for POA. Kindly send the POA pdf document to
+												<u>rent@legaldocs.co.in</u> with subject line <b>POA 9492628200</b></p>
+											<p class="text text-danger">Add the POA details by clicking on Add POA button</p>
+										</div>
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="formsection">
+									<div class="col-sm-12">
+										<button class="btn btn-primary" onclick="addMoreLandlord()">Add More Landlord</button>
+										<button class="btn btn-primary" onclick="addMoreLandlord()">Add POA</button>
+									</div>
+									<div class="clr"></div>
+								</div>
+							</div>
+							<div class="footer">
+								<button class="btn btn-primary" onclick="switchTabs(2)">Next</button>
+								<button id="saveButton1" class="btn btn-primary" onclick="saveFormLandlord(1)">Save</button>
+
+								<div class="alert alert-success chidden" id="successFormLandlord" style="float:right"> <i class="glyphicon glyphicon-ok"></i> Form saved successfuly.
+								</div>
+
+								<div class="alert alert-wait chidden" style="float:right">
+									<svg style="display:block;margin:auto;" width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-ring-alt">
+										<rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>
+										<circle cx="50" cy="50" r="40" stroke="#c4dded" fill="none" stroke-width="10" stroke-linecap="round"></circle>
+										<circle cx="50" cy="50" r="40" stroke="#3498db" fill="none" stroke-width="6" stroke-linecap="round">
+											<animate attributeName="stroke-dashoffset" dur="2s" repeatCount="indefinite" from="0" to="502"></animate>
+											<animate attributeName="stroke-dasharray" dur="2s" repeatCount="indefinite" values="150.6 100.4;1 250;150.6 100.4"></animate>
+										</circle>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div id="form2" class="tab-pane fade active in" style="height: 435px;">
+							<div class="formbody row" id="formTenant" style="height: 385px;">
+								<div id="tenantFormList"></div>
+								<div class="alert alert-danger chidden" id="errorTenant" style="display: block;">
+									<i class="glyphicon glyphicon-info-sign"></i> Please fill the appropriate data in highlighted fields.
+								</div>
+								<div class="alert alert-success chidden" id="successTenant">
+									<i class="glyphicon glyphicon-ok"></i> Tenant added successfully.
+								</div>
+								<div class="formsection">
+                                    <div class="col-sm-2 formfield">
+                                        <p>Gender</p>
+                                        <select highlight-field="tenant-gender" fieldvalidator="gender" fieldvalidator-live="true" id="tenantGender" placeholder="gender" style="background:rgba(231, 76, 60,0.2);">
+                                            <option value="">Select</option>
+                                            <option value="Male">Male (Mr)</option>
+                                            <option value="Female">Female (Ms)</option>
+                                            <option value="Female (Mrs)">Female (Mrs)</option>
+                                        </select>
+                                    </div>
+									<div class="col-sm-4 formfield">
+										<p>Last Name <a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#" data-toggle="tooltip" tabindex="-1" data-placement="bottom" title="" data-original-title="As mentioned on Adhar card.">?</a> </p>
+										<input type="text" highlight-field="tenant-lname" tabindex="-1" fieldvalidator="name" fieldvalidator-live="true" id="tenantLname" placeholder="" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-4 formfield">
+										<p>First Name <a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#" data-toggle="tooltip" tabindex="-1" data-placement="bottom" title="" data-original-title="As mentioned on Adhar card. + If any middle name mention here.">?</a>									</p>
+										<input type="text" highlight-field="tenant-fname" fieldvalidator="name" fieldvalidator-live="true" placeholder="" id="tenantFname" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-2 formfield">
+										<p>Age</p>
+										<input type="number" placeholder="" highlight-field="tenant-age" fieldvalidator="age" fieldvalidator-live="true" id="tenantAge" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+
+									<div class="clr"></div>
+								</div>
+								<div class="formsection">
+									<div class="col-sm-6 formfield">
+										<p>UID (Adhar number)</p>
+										<input type="text" highlight-field="tenant-uid" fieldvalidator="text" placeholder="" fieldvalidator-live="true" id="tenantUid" style="border-bottom:1px solid #2ecc71;background:#fff;">
+									</div>
+									<div class="col-sm-6 formfield">
+										<p>PAN (optional)</p>
+										<input type="text" highlight-field="tenant-pan" placeholder="" fieldvalidator="text" fieldvalidator-live="true" id="tenantPan" style="border-bottom:1px solid #2ecc71;background:#fff;">
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="formsection">
+									<b>Contact Details</b>
+									<hr>
+									<div class="col-sm-6 formfield">
+										<p>Phone number <a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#" data-toggle="tooltip" tabindex="-1" title="" data-original-title="All updates will be shared on this number">?</a> </p>
+										<input type="text" highlight-field="tenant-phone" fieldvalidator="phone" fieldvalidator-live="true" id="tenantPhone" placeholder="" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-6 formfield">
+										<p>Email address <a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#" data-toggle="tooltip" tabindex="-1" title="" data-original-title="Registered agreement will be sent on this email.">?</a> </p>
+										<input type="text" highlight-field="tenant-email" fieldvalidator="email" fieldvalidator-live="true" id="tenantEmail" placeholder="" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="formsection">
+									<b>Address (As mentioned on Adhar card)</b>
+									<hr>
+									<div class="col-sm-9 formfield">
+										<p>Building name</p>
+										<input type="text" highlight-field="tenant-bname" fieldvalidator="alphanumeric" fieldvalidator-live="true" id="tenantBname" placeholder="" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-3 formfield">
+										<p>Flat no.</p>
+										<input type="text" highlight-field="tenant-fno" fieldvalidator="alphanumeric" fieldvalidator-live="true" id="tenantFno" placeholder="" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-6 formfield">
+										<p>Road / Sector</p>
+										<input type="text" highlight-field="tenant-sector" fieldvalidator="alphanumeric" fieldvalidator-live="true" id="tenantSector" placeholder="" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-6 formfield">
+										<p>Location</p>
+										<input type="text" highlight-field="tenant-location" fieldvalidator="alphanumeric" fieldvalidator-live="true" id="tenantLocation" placeholder="" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-8 formfield">
+										<p>Village / City</p>
+										<input type="text" highlight-field="tenant-city" fieldvalidator="name" fieldvalidator-live="true" id="tenantCity" placeholder="" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-4 formfield">
+										<p>PIN</p>
+										<input type="text" highlight-field="tenant-pin" fieldvalidator="pin" fieldvalidator-live="true" id="tenantPin" placeholder="" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="formsection">
+									<b>Executing through <a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#" data-toggle="tooltip" tabindex="-1" title="" data-original-title="In case of Power of Attorney mention POA name.">?</a></b>
+									<hr>
+									<div class="col-sm-12 formfield">
+										<input type="checkbox" style="width:20px !important;float:left;" onclick="showPoa(this,&#39;tenant&#39;)" id="tenantPoa">
+										<p>Power Of Attorney</p>
+									</div>
+									<div id="tenantPoaDetail" class="chidden">
+										<div class="col-sm-3 formfield">
+											<p>POA Name : </p>
+										</div>
+										<div class="col-sm-6 formfield">
+											<input type="text" id="tenantPoaName" fieldvalidator="name" fieldvalidator-live="true" highlight-field="tenant-poa" placeholder="">
+										</div>
+										<div class="col-sm-12 formfield">
+											<p class="text text-info"><a class="text text-danger" href="https://rentagreementregistration.com/downloads/poa_procedure.pdf" target="_blank" download="poa_procedure.pdf">Click here</a> To know the procedure for POA. Kindly send the POA pdf document to
+												<u>rent@legaldocs.co.in</u> with subject line <b>POA 9492628200</b>
+                                            </p>
+											<p class="text text-danger">Add the POA details by clicking on Add More Tenant button</p>
+										</div>
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="formsection">
+									<div class="col-sm-12">
+										<button class="btn btn-primary" onclick="addMoreTenant()">Add More Tenant</button>
+									</div>
+									<div class="clr"></div>
+								</div>
+							</div>
+							<div class="footer">
+								<button class="btn btn-primary" onclick="switchTabs(3)">Next</button>
+								<button class="btn btn-primary" onclick="saveFormTenant(1)">Save</button>
+								<div class="alert alert-success chidden" id="successFormTenant" style="float:right">
+                                    <i class="glyphicon glyphicon-ok"></i> Form saved successfuly.
+								</div>
+								<div class="alert alert-wait chidden" style="float:right">
+									<svg style="display:block;margin:auto;" width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-ring-alt">
+										<rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>
+										<circle cx="50" cy="50" r="40" stroke="#c4dded" fill="none" stroke-width="10" stroke-linecap="round"></circle>
+										<circle cx="50" cy="50" r="40" stroke="#3498db" fill="none" stroke-width="6" stroke-linecap="round">
+											<animate attributeName="stroke-dashoffset" dur="2s" repeatCount="indefinite" from="0" to="502"></animate>
+											<animate attributeName="stroke-dasharray" dur="2s" repeatCount="indefinite" values="150.6 100.4;1 250;150.6 100.4"></animate>
+										</circle>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div id="form3" class="tab-pane fade active in" style="height: 435px;">
+							<div class="formbody row" style="height: 385px;">
+								<div class="alert alert-danger chidden" id="errorProperty" style="display: block;">
+									<i class="glyphicon glyphicon-info-sign"></i> Please fill the appropriate data in highlighted fields.
+								</div>
+								<div class="formsection">
+									<div class="col-sm-3 formfield">
+										<p>Property type</p>
+										<select id="propertyType" highlight-field="properttype">
+											<option>Flat</option>
+											<option>Office</option>
+											<option>Shop</option>
+											<option>Land/Godown</option>
+										</select>
+									</div>
+									<div class="col-sm-3 formfield">
+										<p>Area (Sq. Ft) <a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#" data-placement="bottom" data-toggle="tooltip" tabindex="-1" title="" data-original-title="Build up Area in square foots">?</a></p>
+										<input id="area" type="number" fieldvalidator="number" placeholder="" fieldvalidator-live="true" highlight-field="area" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-3 formfield">
+										<p>Survey/Plot no. <a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#" data-placement="bottom" data-toggle="tooltip" tabindex="-1" title="" data-original-title="Choose any one. You can find this details on electricity bill.">?</a></p>
+										<select id="surveyType" highlight-field="surveytype">
+											<option>Survey no.</option>
+											<option>CTS</option>
+											<option>House no.</option>
+											<option>Plot no.</option>
+										</select>
+									</div>
+									<div class="col-sm-3 formfield">
+										<p>Number (Optional)</p>
+										<input type="text" id="surveyno" fieldvalidator="optional" placeholder="" fieldvalidator-live="true" highlight-field="surveyno" style="border-bottom:1px solid #2ecc71;background:#fff;">
+									</div>
+									<div class="clr"></div>
+								</div>
+                                <div class="formsection">
+									<b>Property Usage</b>
+									<hr>
+									<div class="col-sm-12 formfield">
+										<select id="usage" fieldvalidator="gender" fieldvalidator-live="true" highlight-field="usage" placeholder="gender" style="background:rgba(231, 76, 60,0.2);">
+											<option value="">Select an option</option>
+											<option>Residential</option>
+											<option>Non residential</option>
+										</select>
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="formsection">
+									<b>Property Address</b>
+									<hr>
+									<div class="col-sm-6 formfield">
+										<p>Building name</p>
+										<input type="text" id="bname" fieldvalidator="alphanumeric" placeholder="" fieldvalidator-live="true" highlight-field="bname" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-3 formfield">
+										<p>Flat no.</p>
+										<input type="text" id="fno" fieldvalidator="alphanumeric" placeholder="" fieldvalidator-live="true" highlight-field="fno" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-3 formfield">
+										<p>Floor no.</p>
+										<input type="text" id="flno" fieldvalidator="alphanumeric" placeholder="" fieldvalidator-live="true" highlight-field="flno" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-6 formfield">
+										<p>Road / Sector</p>
+										<input type="text" id="sector" fieldvalidator="alphanumeric" placeholder="" fieldvalidator-live="true" highlight-field="sector" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-6 formfield">
+										<p>Location</p>
+										<input type="text" id="location" fieldvalidator="alphanumeric" placeholder="" fieldvalidator-live="true" highlight-field="location" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-6 formfield">
+										<p>City</p>
+										<select type="text" id="district" fieldvalidator="gender" placeholder="" fieldvalidator-live="true" highlight-field="district" style="background:rgba(231, 76, 60,0.2);">
+											<option value="">Select option</option>
+											<option>Mumbai</option>
+											<option value="Mumbai Suburban">Navi Mumbai</option>
+											<option>Thane</option>
+											<option>Pune</option>
+											<option>Raigad</option>
+											<option>Nagpur</option>
+											<option>Aurangabad</option>
+											<option>Nashik</option>
+										</select>
+									</div>
+									<div class="col-sm-6 formfield">
+										<p>PIN</p>
+										<input type="text" id="pin" fieldvalidator="pin" placeholder="" fieldvalidator-live="true" highlight-field="pin" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="formsection">
+									<b>Appliances/Furniture</b>
+									<hr>
+									<div class="col-sm-3 formfield">
+										<p>Fan</p>
+										<input id="fan" value="0" type="number" highlight-field="fan" fieldvalidator="furniture" fieldvalidator-live="true" placeholder="furniture" style="border-bottom:1px solid #2ecc71;background:#fff;">
+									</div>
+									<div class="col-sm-3 formfield">
+										<p>Tube Light</p>
+										<input id="tubelight" value="0" type="number" highlight-field="tubelight" fieldvalidator="furniture" fieldvalidator-live="true" placeholder="furniture" style="border-bottom:1px solid #2ecc71;background:#fff;">
+									</div>
+									<div class="col-sm-3 formfield">
+										<p>Bed</p>
+										<input id="bed" value="0" type="number" highlight-field="bed" fieldvalidator="furniture" fieldvalidator-live="true" placeholder="furniture" style="border-bottom:1px solid #2ecc71;background:#fff;">
+									</div>
+									<div class="col-sm-3 formfield">
+										<p>Sofa</p>
+										<input id="sofa" value="0" type="number" highlight-field="sofa" fieldvalidator="furniture" fieldvalidator-live="true" placeholder="furniture" style="border-bottom:1px solid #2ecc71;background:#fff;">
+									</div>
+									<div class="col-sm-3 formfield">
+										<p>Table</p>
+										<input id="table" value="0" type="number" highlight-field="table" fieldvalidator="furniture" fieldvalidator-live="true" placeholder="furniture" style="border-bottom:1px solid #2ecc71;background:#fff;">
+									</div>
+									<div class="col-sm-3 formfield">
+										<p>Chair</p>
+										<input id="chair" value="0" type="number" highlight-field="chair" fieldvalidator="furniture" fieldvalidator-live="true" placeholder="furniture" style="border-bottom:1px solid #2ecc71;background:#fff;">
+									</div>
+									<div class="col-sm-3 formfield">
+										<p>AC</p>
+										<input id="ac" value="0" type="number" highlight-field="ac" fieldvalidator="furniture" fieldvalidator-live="true" placeholder="furniture" style="border-bottom:1px solid #2ecc71;background:#fff;">
+									</div>
+                                    <div class="col-sm-3 formfield">
+                                        <p>Gyeser</p>
+                                        <input id="gyeser" value="0" type="number" highlight-field="gyeser" fieldvalidator="furniture" fieldvalidator-live="true" placeholder="furniture" style="border-bottom:1px solid #2ecc71;background:#fff;">
+                                    </div>
+                                    <div class="col-sm-3 formfield">
+                                        <p>Washing Machine</p>
+                                        <input id="washingmachine" value="0" type="number" highlight-field="washingmachine" fieldvalidator="furniture" fieldvalidator-live="true" placeholder="furniture" style="background:rgba(231, 76, 60,0.2);">
+                                    </div>
+                                    <div class="col-sm-3 formfield">
+                                        <p>Cupboard</p>
+                                        <input id="cupboard" value="0" type="number" highlight-field="cupboard" fieldvalidator="furniture" fieldvalidator-live="true" placeholder="furniture" style="background:rgba(231, 76, 60,0.2);">
+                                    </div>
+                                    <div class="col-sm-3 formfield">
+                                        <p>Water Cooler</p>
+                                        <input id="watercooler" value="0" type="number" highlight-field="watercooler" fieldvalidator="furniture" fieldvalidator-live="true" placeholder="furniture" style="background:rgba(231, 76, 60,0.2);">
+                                    </div>
+                                    <div class="col-sm-3 formfield">
+                                        <p>Curtains</p>
+                                        <input id="curtains" value="0" type="number" highlight-field="curtains" fieldvalidator="furniture" fieldvalidator-live="true" placeholder="furniture" style="background:rgba(231, 76, 60,0.2);">
+                                    </div>
+
+
+									<div class="clr"></div>
+									<p><i class="glyphicon glyphicon-info-sign-circle"></i> In case of any other Appliances/Furniture mention in extra clause.</p>
+								</div>
+							</div>
+							<div class="footer">
+								<button class="btn btn-primary" onclick="switchTabs(4)">Next</button>
+								<button class="btn btn-primary" onclick="saveFormProperty(1)">Save</button>
+								<div class="alert alert-success chidden" id="successFormProperty" style="float:right">
+                                    <i class="glyphicon glyphicon-ok"></i> Form saved successfuly.
+                                </div>
+								<div class="alert alert-wait chidden" style="float:right">
+									<svg style="display:block;margin:auto;" width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-ring-alt">
+										<rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>
+										<circle cx="50" cy="50" r="40" stroke="#c4dded" fill="none" stroke-width="10" stroke-linecap="round"></circle>
+										<circle cx="50" cy="50" r="40" stroke="#3498db" fill="none" stroke-width="6" stroke-linecap="round">
+											<animate attributeName="stroke-dashoffset" dur="2s" repeatCount="indefinite" from="0" to="502"></animate>
+											<animate attributeName="stroke-dasharray" dur="2s" repeatCount="indefinite" values="150.6 100.4;1 250;150.6 100.4"></animate>
+										</circle>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div id="form4" class="tab-pane fade active in" style="height: 435px;">
+							<div class="formbody row" style="height: 385px;">
+								<div class="alert alert-danger chidden" id="errorAgreement" style="display: block;">
+									<i class="glyphicon glyphicon-info-sign"></i> Please fill the appropriate data in highlighted fields.
+								</div>
+								<div class="formsection">
+                                    <p class="fromToRentError" style="color: red; margin-top: 10px;">Please fille appropriate data in following form.</p>
+									<div class="col-sm-12 formfield">
+										<p>Total Duration in months (usually 11)</p>
+                                        <input type="text" highlight-field="duration" fieldvalidator="duration" fieldvalidator-live="true" id="inp-duration" onchange="setDate()" onkeyup="setDate()" valid-rule="^([1-9]|[1-5]\d|^6[0])$" placeholder="duration" style="border-bottom:1px solid #2ecc71;background:#fff;">
+									</div>
+                                    <div id="increment_holder">
+                                        <div class="col-xs-3">From</div>
+                                        <div class="col-xs-3">To</div>
+                                        <div class="col-xs-6">Rent</div>
+                                        <div class="varing-rent">
+                                            <div class="rent-row rent-row-0">
+                                                <div class="col-xs-3">
+                                                    <input data-name="FromMonth" class="inp-from" type="" name="" disabled="" value="1">
+                                                </div>
+                                                <div class="col-xs-3">
+                                                    <input data-name="ToMonth" class="inp-to" type="" name="">
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <input data-name="MonthlyRent" class="inp-rent inp-err" type="" name="">
+                                                </div>
+                                                <div class="clr"></div>
+                                            </div>
+                                            <div class="rent-row rent-row-1">
+                                                <div class="col-xs-3">
+                                                    <input data-name="FromMonth" class="inp-from" type="" name="" disabled="disabled" value="">
+                                                </div>
+                                                <div class="col-xs-3">
+                                                    <input data-name="ToMonth" class="inp-to" type="" name="" disabled="disabled">
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <input data-name="MonthlyRent" class="inp-rent" type="" name="" disabled="disabled">
+                                                </div>
+                                                <div class="clr"></div>
+                                            </div>
+                                            <div class="rent-row rent-row-2">
+                                                <div class="col-xs-3">
+                                                    <input data-name="FromMonth" class="inp-from" type="" name="" disabled="disabled" value="">
+                                                </div>
+                                                <div class="col-xs-3">
+                                                    <input data-name="ToMonth" class="inp-to" type="" name="" disabled="disabled">
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <input data-name="MonthlyRent" class="inp-rent" type="" name="" disabled="disabled">
+                                                </div>
+                                                <div class="clr"></div>
+                                            </div>
+                                            <div class="rent-row rent-row-3">
+                                                <div class="col-xs-3">
+                                                    <input data-name="FromMonth" class="inp-from" type="" name="" disabled="disabled" value="">
+                                                </div>
+                                                <div class="col-xs-3">
+                                                    <input data-name="ToMonth" class="inp-to" type="" name="" disabled="disabled">
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <input data-name="MonthlyRent" class="inp-rent" type="" name="" disabled="disabled">
+                                                </div>
+                                                <div class="clr"></div>
+                                            </div>
+                                            <div class="rent-row rent-row-4">
+                                                <div class="col-xs-3">
+                                                    <input data-name="FromMonth" class="inp-from" type="" name="" disabled="disabled" value="">
+                                                </div>
+                                                <div class="col-xs-3">
+                                                    <input data-name="ToMonth" class="inp-to" type="" name="" disabled="disabled">
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <input data-name="MonthlyRent" class="inp-rent" type="" name="" disabled="disabled">
+                                                </div>
+                                                <div class="clr"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+									<div class="clr"></div>
+								</div>
+								<div class="formsection">
+									<div class="col-sm-5 formfield">
+										<p>Deposit Amount</p>
+										<input type="number" highlight-field="deposite" id="deposite" fieldvalidator="number" fieldvalidator-live="true" placeholder="" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-7 formfield" style="padding-top:25px;">
+										<input type="checkbox" style="float:left;width:20px !important;" highlight-field="refundable" id="refundable" onclick="isRefundable(this)" checked="">
+										<p>Refundable Deposit</p>
+									</div>
+									<div class="clr"></div>
+									<div class="col-sm-4 formfield">
+										<p>Mode of deposit</p>
+										<select onchange="depositeMode()" id="depositeMode" highlight-field="depositemode" fieldvalidator="mode" fieldvalidator-live="true" placeholder="mode" style="border-bottom:1px solid #2ecc71;background:#fff;">
+											<option>Cash</option>
+											<option>Cheque</option>
+											<option>DD</option>
+											<option>Internet Banking</option>
+										</select>
+									</div>
+									<div class="clr"></div>
+									<div id="transactionDetails" class="chidden" style="display: none;">
+										<div class="col-sm-6 formfield">
+											<p>Bank Name (optional)</p>
+											<input type="text" highlight-field="bank" id="bank" placeholder="">
+										</div>
+										<div class="col-sm-6 formfield">
+											<p>Branch Name (optional)</p>
+											<input type="text" highlight-field="branch" id="branch" placeholder="">
+										</div>
+										<div class="col-sm-6 formfield">
+											<p><span class="modeName">Cash</span> number (optional)</p>
+											<input type="text" highlight-field="transactionid" id="transactionid" placeholder="">
+										</div>
+										<div class="col-sm-6 formfield">
+											<p><span class="modeName">Cash</span> Date (optional)</p>
+											<input type="text" id="transactiondate" highlight-field="transactiondate" placeholder="" readonly="">
+										</div>
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="formsection">
+									<div class="col-sm-6 formfield">
+										<p>Start Date</p>
+										<input type="text" id="startdate" fieldvalidator="date" placeholder="" highlight-field="startdate" readonly="" style="background:rgba(231, 76, 60,0.2);">
+									</div>
+									<div class="col-sm-6 formfield">
+										<p>Lock-in Period (months) *Usually 6 months</p>
+										<input type="number" fieldvalidator="lockin" fieldvalidator-live="true" id="lockin" highlight-field="lockin" placeholder="" value="0" style="border-bottom:1px solid #2ecc71;background:#fff;">
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="formsection">
+									<div class="col-sm-8 formfield">
+										<p>Registration charges Paid by:</p>
+										<select highlight-field="paidby" id="paidby" fieldvalidator="paidby" fieldvalidator-live="true" placeholder="paidby" style="border-bottom:1px solid #2ecc71;background:#fff;">
+											<option value="Licensee and Licensor">Landlord And Tenant</option>
+											<option value="Licensee">Tenant</option>
+											<option value="Licensor">Landlord</option>
+										</select>
+									</div>
+									<div class="clr"></div>
+								</div>
+							</div>
+							<div class="footer">
+								<button class="btn btn-primary" onclick="switchTabs(6)">Next</button>
+								<button class="btn btn-primary" onclick="saveFormAgreement(1)">Save</button>
+								<div class="alert alert-success chidden" id="successFormAgreement" style="float:right">
+                                    <i class="glyphicon glyphicon-ok"></i> Form saved successfuly.
+                                </div>
+								<div class="alert alert-wait chidden" style="float:right">
+									<svg style="display:block;margin:auto;" width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-ring-alt">
+										<rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>
+										<circle cx="50" cy="50" r="40" stroke="#c4dded" fill="none" stroke-width="10" stroke-linecap="round"></circle>
+										<circle cx="50" cy="50" r="40" stroke="#3498db" fill="none" stroke-width="6" stroke-linecap="round">
+											<animate attributeName="stroke-dashoffset" dur="2s" repeatCount="indefinite" from="0" to="502"></animate>
+											<animate attributeName="stroke-dasharray" dur="2s" repeatCount="indefinite" values="150.6 100.4;1 250;150.6 100.4"></animate>
+										</circle>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div id="form5" class="tab-pane fade" style="height: 435px;">
+							<div class="formbody row" style="height: 385px;">
+								<div class="formsection">
+									<div class="col-sm-12 formfield">
+										<b style="float:left;">Important</b>
+										<br>
+										<p style="float:left;">Kindly save and share this draft before booking an appointment for your reference</p>
+										<button style="float:right;" onclick="printDoc()" class="btn btn-primary">Download PDF</button>
+										<br>
+										<!-- <a href="#" onclick="howtoSave()">How do I save as pdf?</a> -->
+									</div>
+									<div class="clr"></div>
+								</div>
+								<p class="text-warning" style="display:block;background:#eee;padding:5px;">
+                                    <i class="fglyphicon glyphicon-exclamation-sign"></i> Biometric verification of <b>2 witnesses are mendatory</b>. You can provide witness details at the time of biometric verification.
+                                </p>
+								<p class="text-warning" style="display:block;background:#eee;padding:5px;">
+                                    <i class="glyphicon glyphicon-exclamation-sign"></i> Witnesses can be managed by LegalDocs @ 200 Rs. per witness.
+                                </p>
+								<div class="alert alert-danger chidden" id="errorTNC" style="display: none;">
+									<i class="glyphicon glyphicon-info-sign"></i> Please agree to following checklist.
+								</div>
+								<div class="alert alert-info alert-checkbox-holder">
+									<div class="checkbox">
+										<input type="checkbox" value="1" id="cbTNC1" name="" checked="">
+										<label for="cbTNC1"></label>
+									</div>
+									<div class="clr"></div>
+									<p><i class="glyphicon glyphicon-info-sign"></i> Please share this draft with all parties (Landlord/Tenant) of this agreement.</p>
+									<div class="clr"></div>
+								</div>
+								<div class="alert alert-info alert-checkbox-holder">
+									<div class="checkbox">
+										<input type="checkbox" value="1" id="cbTNC2" name="" checked="">
+										<label for="cbTNC2"></label>
+									</div>
+									<div class="clr"></div>
+									<p>
+                                        <i class="glyphicon glyphicon-info-sign"></i> You wont be able to make any changes after submitting the draft.
+                                    </p>
+									<div class="clr"></div>
+								</div>
+								<div class="alert alert-info alert-checkbox-holder">
+									<div class="checkbox">
+										<input type="checkbox" value="1" id="cbTNC3" name="" checked="">
+										<label for="cbTNC3"></label>
+									</div>
+									<div class="clr"></div>
+									<p>
+                                        <i class="glyphicon glyphicon-info-sign"></i> In case of query kindly contact on 9022119922 / 7303240250 and confirm the information
+										from office. Biometric experts have limited knowledge of verification of user.
+                                    </p>
+									<div class="clr"></div>
+								</div>
+								<div class="alert alert-info alert-checkbox-holder">
+									<div class="checkbox">
+										<input type="checkbox" value="1" id="cbTNC4" name="" checked="">
+										<label for="cbTNC4"></label>
+									</div>
+									<div class="clr"></div>
+									<p>
+                                        <i class="glyphicon glyphicon-info-sign"></i> Once the agreement is registered all the parties will receive the same
+										on respective email address provided with this form. Kindly mention active email address.
+                                    </p>
+									<div class="clr"></div>
+								</div>
+								<div class="alert alert-danger chidden" id="errorWitness">
+									<i class="glyphicon glyphicon-info-sign"></i> Please fill the appropriate data in highlighted fields.
+								</div>
+								<div class="formsection chidden">
+									<input id="witness1Check" type="checkbox" style="width:20px !important;float:left;" onclick="showWitness(this,&#39;witness1_holder&#39;,1)">
+									<p>I have witness 1 details with me</p>
+									<div class="clr"></div>
+								</div>
+								<div class="formsection chidden" id="witness1_holder">
+									<b>Witness 1</b>
+									<hr>
+									<div class="col-sm-5 formfield">
+										<p>Last name <a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#" data-toggle="tooltip" tabindex="-1" data-placement="bottom" title="" data-original-title="As mentioned on Adhar card.">?</a> </p>
+										<input type="text" fieldvalidator="name" fieldvalidator-live="true" placeholder="" highlight-field="witness1-lname" id="witness1Lname">
+									</div>
+									<div class="col-sm-5 formfield">
+										<p>First name <a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#" data-toggle="tooltip" tabindex="-1" data-placement="bottom" title="" data-original-title="As mentioned on Adhar card. + If any middle name mention here.">?</a>									</p>
+										<input type="text" fieldvalidator="name" fieldvalidator-live="true" placeholder="" highlight-field="witness1-fname" id="witness1Fname">
+									</div>
+									<div class="col-sm-2 formfield">
+										<p>Age</p>
+										<input type="number" fieldvalidator="age" fieldvalidator-live="true" placeholder="" highlight-field="witness1-age" id="witness1Age">
+									</div>
+									<div class="col-sm-6 formfield">
+										<p>UID (Adhar number)</p>
+										<input type="text" fieldvalidator="text" fieldvalidator-live="true" placeholder="" highlight-field="witness1-uid" id="witness1Uid">
+									</div>
+									<div class="col-sm-6 formfield">
+										<p>PAN</p>
+										<input type="text" fieldvalidator="pan" fieldvalidator-live="true" placeholder="" highlight-field="witness1-pan" id="witness1Pan">
+									</div>
+									<div class="col-sm-3 formfield">
+										<p>Road/Sector</p>
+										<input type="text" fieldvalidator="alphanumeric" fieldvalidator-live="true" placeholder="" highlight-field="witness1-sector" id="witness1Sector">
+									</div>
+									<div class="col-sm-3 formfield">
+										<p>Location</p>
+										<input type="text" fieldvalidator="alphanumeric" fieldvalidator-live="true" placeholder="" highlight-field="witness1-location" id="witness1Location">
+									</div>
+									<div class="col-sm-3 formfield">
+										<p>City</p>
+										<input type="text" fieldvalidator="alphanumeric" fieldvalidator-live="true" placeholder="" highlight-field="witness1-city" id="witness1City">
+									</div>
+									<div class="col-sm-3 formfield">
+										<p>Pin</p>
+										<input type="text" fieldvalidator="pin" fieldvalidator-live="true" placeholder="" highlight-field="witness1-pin" id="witness1Pin">
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="formsection chidden">
+									<input id="witness2Check" type="checkbox" style="width:20px !important;float:left;" onclick="showWitness(this,&#39;witness2_holder&#39;,2)">
+									<p>I have witness 2 details with me</p>
+									<div class="clr"></div>
+								</div>
+								<div class="formsection chidden" id="witness2_holder">
+									<b>Witness 2</b>
+									<hr>
+									<div class="col-sm-5 formfield">
+										<p>Last name <a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#" data-toggle="tooltip" tabindex="-1" title="" data-original-title="As mentioned on Adhar card.">?</a> </p>
+										<input type="text" fieldvalidator="name" fieldvalidator-live="true" placeholder="" highlight-field="witness2-lname" id="witness2Lname">
+									</div>
+									<div class="col-sm-5 formfield">
+										<p>First name <a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#" data-toggle="tooltip" tabindex="-1" title="" data-original-title="As mentioned on Adhar card. + If any middle name mention here.">?</a>									</p>
+										<input type="text" fieldvalidator="name" fieldvalidator-live="true" placeholder="" highlight-field="witness2-fname" id="witness2Fname">
+									</div>
+									<div class="col-sm-2 formfield">
+										<p>Age</p>
+										<input type="number" fieldvalidator="age" fieldvalidator-live="true" placeholder="" highlight-field="witness2-age" id="witness2Age">
+									</div>
+									<div class="col-sm-6 formfield">
+										<p>UID (Adhar number)</p>
+										<input type="text" fieldvalidator="text" fieldvalidator-live="true" placeholder="" highlight-field="witness2-uid" id="witness2Uid">
+									</div>
+									<div class="col-sm-6 formfield">
+										<p>PAN</p>
+										<input type="text" fieldvalidator="pan" fieldvalidator-live="true" placeholder="" highlight-field="witness2-pan" id="witness2Pan">
+									</div>
+									<div class="col-sm-3 formfield">
+										<p>Road/Sector</p>
+										<input type="text" fieldvalidator="alphanumeric" fieldvalidator-live="true" placeholder="" highlight-field="witness2-sector" id="witness2Sector">
+									</div>
+									<div class="col-sm-3 formfield">
+										<p>Location</p>
+										<input type="text" fieldvalidator="alphanumeric" fieldvalidator-live="true" placeholder="" highlight-field="witness2-location" id="witness2Location">
+									</div>
+									<div class="col-sm-3 formfield">
+										<p>City</p>
+										<input type="text" fieldvalidator="alphanumeric" fieldvalidator-live="true" placeholder="" highlight-field="witness2-city" id="witness2City">
+									</div>
+									<div class="col-sm-3 formfield">
+										<p>Pin</p>
+										<input type="text" fieldvalidator="pin" fieldvalidator-live="true" placeholder="" highlight-field="witness2-pin" id="witness2Pin">
+									</div>
+									<div class="clr"></div>
+								</div>
+							</div>
+							<div class="footer">
+								<button class="btn btn-primary" onclick="checkFullForm()">Next</button>
+								<div class="alert alert-success chidden" id="successFormWitness" style="float:right">
+                                    <i class="glyphicon glyphicon-ok"></i> Form saved successfuly.
+                                </div>
+								<div class="alert alert-wait chidden" style="float:right">
+									<svg style="display:block;margin:auto;" width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-ring-alt">
+										<rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>
+										<circle cx="50" cy="50" r="40" stroke="#c4dded" fill="none" stroke-width="10" stroke-linecap="round"></circle>
+										<circle cx="50" cy="50" r="40" stroke="#3498db" fill="none" stroke-width="6" stroke-linecap="round">
+											<animate attributeName="stroke-dashoffset" dur="2s" repeatCount="indefinite" from="0" to="502"></animate>
+											<animate attributeName="stroke-dasharray" dur="2s" repeatCount="indefinite" values="150.6 100.4;1 250;150.6 100.4"></animate>
+										</circle>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div id="form6" class="tab-pane fade">
+							<div class="formsection poa-attachemnt-holder" style="display: none;">
+								<div class="col-sm-12 formfield">
+									<b style="float:left;">POA Document</b>
+									<br>
+									<p style="float:left;">Kindly upload your scanned POA document in pdf format.</p>
+									<div class="col-sm-8">
+										<input type="file" id="inp-poa-attachment" data-url="none" data-time="" accept="application/pdf">
+									</div>
+									<div class="col-sm-4">
+										<button class="btn btn-primary" type="button" onclick="uploadPoa()">Upload</button>
+									</div>
+									<div class="col-sm-8" id="uploaded-file-holder">
+										<a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1" download="poa_file.pdf" target="_blank">Uploaded POA Document</a>
+									</div>
+								</div>
+								<div class="clr"></div>
+							</div>
+							<div class="formsection chidden">
+								<div class="col-sm-12 formfield">
+									<b>Share draft</b>
+									<hr>
+									<p>Share this draft with following people</p>
+									<ul id="participantslist">
+
+                                    </ul>
+									<button style="float:right;" onclick="shareDraft()" class="btn btn-primary">Share</button>
+								</div>
+								<div class="clr"></div>
+							</div>
+                            <form id="finalform" action="https://rentagreementregistration.com/thankyou.php" method="post">
+								<div class="formsection" style="padding-top:10px; padding-bottom:15px;">
+									<b>Before Scheduling an Appointment Please Confirm draft by sharing with Involved Parties</b><br>
+									<button type="button" class="btn btn-primary" style="float: right;" data-json="{&quot;person&quot;:[],&quot;propertytype&quot;:&quot;Flat&quot;,&quot;area&quot;:&quot;&quot;,&quot;serveytype&quot;:&quot;&quot;,&quot;serveyno&quot;:&quot;&quot;,&quot;bname&quot;:&quot;&quot;,&quot;fno&quot;:&quot;&quot;,&quot;flno&quot;:&quot;&quot;,&quot;sector&quot;:&quot;&quot;,&quot;location&quot;:&quot;&quot;,&quot;city&quot;:&quot;&quot;,&quot;pin&quot;:&quot;&quot;,&quot;use&quot;:&quot;&quot;,&quot;fan&quot;:&quot;&quot;,&quot;tubelight&quot;:&quot;&quot;,&quot;bed&quot;:&quot;&quot;,&quot;sofa&quot;:&quot;&quot;,&quot;table&quot;:&quot;&quot;,&quot;chair&quot;:&quot;&quot;,&quot;ac&quot;:&quot;&quot;,&quot;gyeser&quot;:&quot;&quot;,&quot;clauses&quot;:[],&quot;rent&quot;:&quot;&quot;,&quot;duration&quot;:&quot;11&quot;,&quot;deposite&quot;:&quot;&quot;,&quot;mode&quot;:&quot;Cash&quot;,&quot;bank&quot;:&quot;&quot;,&quot;branch&quot;:&quot;&quot;,&quot;transactionid&quot;:&quot;&quot;,&quot;transactiondate&quot;:&quot;&quot;,&quot;refundable&quot;:&quot;Refundable&quot;,&quot;startdate&quot;:&quot;&quot;,&quot;paidby&quot;:&quot;Licensee and Licensor&quot;,&quot;lockin&quot;:&quot;0&quot;,&quot;appointmentAddress&quot;:&quot;&quot;,&quot;plan&quot;:&quot;&quot;,&quot;appliedCode&quot;:&quot;&quot;,&quot;appliedAmount&quot;:&quot;&quot;}" data-toggle="modal" data-target="#emailModal" onclick="showPeople(this)"><span class="glyphicon glyphicon-envelope"></span> Share PDF</button>
+									<div class="clr"></div>
+								</div>
+                                <div class="formsection div-payment-link" style="">
+                                    <button class="btn btn-primary" style="float: right;" type="button" onclick="continueToPayment()">Continue to payment</button>
+                                    <div class="clr"></div>
+                                    <script type="text/javascript">
+                                        function continueToPayment(){
+                                            saveForm(2,function(){
+                                                window.location.href="plan.php";
+                                            });
+
+                                        }
+                                    </script>
+                                </div>
+                                <div class="formsection div-appointment" style="padding-top:10px; padding-bottom:15px;display: none;">
+                                    <b>Schedule an Appointment</b>
+                                    <hr>
+                                    <div class="col-sm-12 formfield">
+                                        <div style="margin-top:10px;">
+                                            <p>Appointment Address with Landmark</p>
+                                            <select onchange="selectAddress(this)">
+                                                <option>select</option>
+                                                <option value="property">Property Address</option>
+                                                <option value="landlord">Landlord Address</option>
+                                                <option value="custom">Different/Custom</option>
+                                            </select>
+                                            <textarea style="margin-top:5px;padding:5px;height:50px;width:100%;" class="appointment-address" id="appointmentAddress1"></textarea>
+                                        </div>
+                                        <div id="div-second-appointment" style="margin-top:10px; display:none;">
+                                            <p>Appointment Address with Landmark (For Second Appointment)</p>
+                                            <select onchange="selectAddress(this)">
+                                                <option>select</option>
+                                                <option value="property">Property Address</option>
+                                                <option value="landlord">Landlord Address</option>
+                                                <option value="custom">Different/Custom</option>
+                                            </select>
+                                            <textarea style="margin-top:5px;padding:5px;height:50px;width:100%;" class="appointment-address" id="appointmentAddress2"></textarea>
+                                        </div>
+                                        <script>
+                                            function selectAddress(el) {
+                                                var address;
+                                                if (el.value == "property") {
+                                                    address = _("fno").value + ", " + _("bname").value + ", " + _("sector").value + ", " + _("location").value +
+                                                        ", " + _("district").value;
+                                                    $(el).parent().find(".appointment-address").val(address);
+                                                } else if (el.value == "landlord") {
+                                                    address = _("landlordFno").value + ", " + _("landlordBname").value + ", " + _("landlordSector").value + ", " +
+                                                        _("landlordLocation").value + ", " + _("landlordCity").value;
+                                                    $(el).parent().find(".appointment-address").val(address);
+                                                } else {
+                                                    $(el).parent().find(".appointment-address").val("");
+                                                }
+                                            }
+                                        </script>
+                                    </div>
+                                    <div class="col-sm-4 formfield chidden">
+                                        <p>Appointment Date</p>
+                                        <input id="appointmentdate" fieldvalidator="date" name="d" fieldvalidator-live="true" value="01/06/2017" data-date-start-date="0d" readonly="" placeholder="date" style="border-bottom:1px solid #2ecc71;background:#fff;">
+                                    </div>
+                                    <div class="col-sm-4 formfield chidden">
+                                        <p>Preferred Time</p>
+                                        <select id="preferredtime" name="t">
+                                            <option>Morning</option>
+                                            <option>Afternoon</option>
+                                            <option>Evening</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="clr"></div>
+                                </div>
+
+                                <div class="formsection div-payment" style="display:none">
+									<div class="col-xs-8" style="padding-top:3px;">
+										<span>Active Plan</span>
+									</div>
+									<div class="col-xs-4" style="padding-top:3px;">
+										<span class="sp-plan"></span>
+									</div>
+									<div class="col-xs-8" style="padding-top:3px;background:#DDD;">
+										<span>Quotation</span>
+									</div>
+									<div class="col-xs-4" style="padding-top:3px;background:#DDD;">
+										<span class="sp-total-amount">1025</span>
+									</div>
+									<div class="col-xs-8" style="padding-top:3px;">
+										<span>Amount Received</span>
+									</div>
+									<div class="col-xs-4" style="padding-top:3px;">
+										<span class="sp-received-amount">0</span>
+									</div>
+									<div class="col-xs-8" style="padding-top:3px;background:#DDD;">
+										<span>Remaining Amount</span>
+									</div>
+									<div class="col-xs-4" style="padding-top:3px;background:#DDD;">
+										<span class="sp-remaining-amount">1025</span>
+									</div>
+                                    <span class="sp-plan-upgrade" style="color:green;"></span>
+                                    <div class="clr"></div>
+                                </div>
+
+                                <div class="formsection">
+                                    <input type="hidden" name="fjson" id="post-fjson">
+                                    <input type="hidden" name="stampDuty" id="post-stamp-duty" value="0">
+									<input type="hidden" name="serviceCharges" id="post-service-charges" value="0">
+                                    <input type="hidden" name="couponCode" id="post-coupon-code" value="">
+                                    <input type="hidden" name="couponAmount" id="post-coupon-amount" value="0">
+                                    <input type="hidden" name="totalAmount" id="post-total-amount" value="1025">
+                                    <input type="hidden" name="visits" id="post-visits" value="1">
+									<input type="hidden" name="piSelected" id="post-pi" value="0">
+									<input type="hidden" name="piPreSelected" id="post-pre-pi" value="0">
+                                    <button type="button" style="float:right;" onclick="bookConfirm()" class="btn btn-primary">Book an Appointment</button>
+                                    <div class="clr"></div>
+                                </div>
+                            </form>
+						</div>
+                        <div id="form7" class="tab-pane fade">
+							<div class="formbody row" style="height: 385px;">
+                                <div class="formsection">
+                                    <div class="col-sm-12 formfield">
+                                        <a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#" style="float:right;display: none;" data-toggle="modal" data-target="#clausesModal">list of clauses</a>
+                                        <b>Extra Clauses</b>
+                                        <hr>
+                                        <div class="hidden" id="clausesList">
+                                        </div>
+                                        <span style="float: right;">Count: <span id="eccount">0</span>/1000</span>
+                                        <textarea style="margin-top:10px;padding:5px;resize:none;width:100%;height:100px;" id="clauseText" highlight-field="extraclause" onblur="rmNewLine()"></textarea>
+                                        <button class="btn btn-primary hidden" onclick="addNewClause()">Save clause</button>
+                                        <br>
+                                        <span>## Special charecters are not acceptable.</span>
+                                        <span>Only 1000 characters are allowed. Effective from 20 Oct 2018.</span>
+                                    </div>
+                                    <div class="clr"></div>
+                                    <script type="text/javascript">
+                                        $("#clauseText").on('keyup',function(){
+                                            var text=cleanText($("#clauseText").val());
+                                            text=text.substring(0,1000);
+                                            $("#clauseText").val(text);
+                                            $("#eccount").html(text.length);
+                                        });
+                                        function rmNewLine(){
+                                            var text=cleanText($("#clauseText").val());
+                                            text=text.substring(0,1000);
+                                            $("#clauseText").val(text);
+                                            $("#eccount").html(text.length);
+                                        }
+                                    </script>
+                                </div>
+
+								<div class="formsection hidden">
+                                    <style>
+                                        .checkbox-holder{clear:both;}
+                                        .checkbox input{display:none;}
+                                        .checkbox-holder p{line-height:25px;margin-left:40px;padding-top:5px;}
+                                        .checkbox {width: 25px;margin: 5px;position: relative;float:left;}
+                                        .checkbox label {cursor: pointer;position: absolute;width: 25px;height: 25px;top: 0;left: 0;background: #fff;border:1px solid #ddd;color:#1abc9c}
+                                        .checkbox label:after {opacity: 0.2;position: absolute;width: 15px;height: 8px;background: transparent;top: 5px;left: 4px;border: 3px solid #1abc9c;border-top: none;border-right: none;transform: rotate(-45deg);}
+                                        .checkbox label:hover::after {opacity: 0.5;}
+                                        .checkbox input[type=checkbox]:checked + label:after {opacity: 1;content: '';}
+                                    </style>
+                                    <div class="formsection hidden">
+                                        <b>Advanced clauses</b>
+                                        <hr>
+                                        <section class="checkbox-holder hidden">
+                                            <div class="checkbox">
+                                                <input type="checkbox" value="1" id="cbEx11" name="">
+                                                <label for="cbEx11"></label>
+                                            </div>
+                                            <p>Brokerage on Renewal</p>
+                                        </section>
+                                        <section class="checkbox-holder">
+                                            <div class="checkbox">
+                                                <input type="checkbox" value="1" id="cbEx1" name="">
+                                                <label for="cbEx1"></label>
+                                            </div>
+                                            <p>Representation by landlord</p>
+                                        </section>
+                                        <section class="checkbox-holder">
+                                            <div class="checkbox">
+                                                <input type="checkbox" value="1" id="cbEx2" name="">
+                                                <label for="cbEx2"></label>
+                                            </div>
+                                            <p>Representation by tenant</p>
+                                        </section>
+                                        <section class="checkbox-holder">
+                                            <div class="checkbox">
+                                                <input type="checkbox" value="1" id="cbEx3" name="">
+                                                <label for="cbEx3"></label>
+                                            </div>
+                                            <p>Overstay</p>
+                                        </section>
+                                        <section class="checkbox-holder">
+                                            <div class="checkbox">
+                                                <input type="checkbox" value="1" id="cbEx4" name="">
+                                                <label for="cbEx4"></label>
+                                            </div>
+                                            <p>Failure of rent payment</p>
+                                        </section>
+                                        <section class="checkbox-holder">
+                                            <div class="checkbox">
+                                                <input type="checkbox" value="1" id="cbEx5" name="">
+                                                <label for="cbEx5"></label>
+                                            </div>
+                                            <p>Refund of Security Deposit</p>
+                                        </section>
+                                        <section class="checkbox-holder">
+                                            <div class="checkbox">
+                                                <input type="checkbox" value="1" id="cbEx6" name="">
+                                                <label for="cbEx6"></label>
+                                            </div>
+                                            <p>Non-refund of deposit by Landlord</p>
+                                        </section>
+                                        <section class="checkbox-holder">
+                                            <div class="checkbox">
+                                                <input type="checkbox" value="1" id="cbEx7" name="">
+                                                <label for="cbEx7"></label>
+                                            </div>
+                                            <p>Painting</p>
+                                        </section>
+                                        <section class="checkbox-holder">
+                                            <div class="checkbox">
+                                                <input type="checkbox" value="1" id="cbEx8" name="">
+                                                <label for="cbEx8"></label>
+                                            </div>
+                                            <p>Food Habits</p>
+                                        </section>
+                                        <section class="checkbox-holder">
+                                            <div class="checkbox">
+                                                <input type="checkbox" value="1" id="cbEx9" name="">
+                                                <label for="cbEx9"></label>
+                                            </div>
+                                            <p>Clean Property Handover</p>
+                                        </section>
+                                        <section class="checkbox-holder">
+                                            <div class="checkbox">
+                                                <input type="checkbox" value="1" id="cbEx10" name="">
+                                                <label for="cbEx10"></label>
+                                            </div>
+                                            <p>Documents on Property address</p>
+                                        </section>
+
+
+                                        <section class="checkbox-holder">
+                                            <div class="checkbox">
+                                                <input type="checkbox" value="1" id="cbEx12" name="">
+                                                <label for="cbEx12"></label>
+                                            </div>
+                                            <p>Legal Notice</p>
+                                        </section>
+                                        <div class="clr"></div>
+
+                                        <div class="col-sm-12 formfield chidden">
+                                            <div id="advanceClausesList">
+                                            </div>
+                                        </div>
+
+                                        <div class="clr"></div>
+                                    </div>
+								</div>
+
+                            </div>
+                            <div class="footer">
+								<button class="btn btn-primary" onclick="switchTabs(6)">Next</button>
+								<button class="btn btn-primary" onclick="saveFormAgreement(1)">Save</button>
+								<div class="alert alert-success chidden" id="successFormAgreement" style="float:right">
+                                    <i class="glyphicon glyphicon-ok"></i> Form saved successfuly.
+                                </div>
+								<div class="alert alert-wait chidden" style="float:right">
+									<svg style="display:block;margin:auto;" width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-ring-alt">
+										<rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>
+										<circle cx="50" cy="50" r="40" stroke="#c4dded" fill="none" stroke-width="10" stroke-linecap="round"></circle>
+										<circle cx="50" cy="50" r="40" stroke="#3498db" fill="none" stroke-width="6" stroke-linecap="round">
+											<animate attributeName="stroke-dashoffset" dur="2s" repeatCount="indefinite" from="0" to="502"></animate>
+											<animate attributeName="stroke-dasharray" dur="2s" repeatCount="indefinite" values="150.6 100.4;1 250;150.6 100.4"></animate>
+										</circle>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+
+            <!--Draft-->
+            <div class="col-sm-6" id="draft-container" style="background: #fff;">
+                <div id="saveBtnHolder" style="padding-bottom:10px;">
+                    <button type="button" class="btn btn-primary" onclick="printDoc()">Download PDF </button>
+                    <span style="float:right; margin-top:10px;"><label>Share Link : <span style="background-color:#ecf0f1">https://legaldocs.co.in/sr/771f81</span></label></span>
+					<!-- <a style="margin-left:20px;" href="#" onclick="howtoSave()">How do I save as PDF?</a> -->
+                </div>
+                <div id="draft_holder" style="overflow-y: scroll; height: 458px;">
+                    <p style="color:#999;">* This is a reference draft</p>
+                    <p style="color:#999;">** Kindly make sure details provided in the form are correct and share the draft with all participants before booking an appointment</p>
+                    <br>
+                    <br>
+                    <table id="draftTable" border="1" style="width:100%;">
+                        <tbody><tr>
+                            <th>Particulars</th>
+                            <th>Amount Paid</th>
+                            <th>GRN / Transaction id</th>
+                            <th>Date</th>
+                        </tr>
+                        <tr>
+                            <td>Stamp Duty</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Registration Fee</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody></table>
+                    <br>
+                    <div style="text-align:center">
+                        <h3>LEAVE AND LICENSE AGREEMENT</h3>
+                        <p>This agreement is made and executed on <span class="bold startdate" highlight-data="startdate" highlight-scroll="true"></span> at <span class="bold district" highlight-data="district" highlight-scroll="true"></span>, </p>
+                        <p>Between, </p>
+                        <div id="landlordlist">
+                            <p id="landlordDataTemplate" class="template persondata">Name :
+                                <span class="bold lname" highlight-data="landlord-lname" highlight-scroll="true" id="landlordDataLname"></span>
+                                <span class="bold fname" highlight-data="landlord-fname" highlight-scroll="true" id="landlordDataFname"></span>, Age: About
+                                <span class="bold age" highlight-data="landlord-age" highlight-scroll="true" id="landlordDataAge"></span> Years,
+                                <span class="bold gender" highlight-data="landlord-gender" highlight-scroll="true" id="landlordDataGender"></span>, having UID
+                                <span class="bold uid" highlight-data="landlord-uid" highlight-scroll="true" id="landlordDataUid"></span>, PAN
+                                <span class="bold pan" highlight-data="landlord-pan" highlight-scroll="true" id="landlordDataPan"></span> . Residing at:
+                                <span class="bold fno" highlight-data="landlord-fno" highlight-scroll="true" id="landlordDataFno"></span>,
+                                <span class="bold bname" highlight-data="landlord-bname" highlight-scroll="true" id="landlordDataBname"></span>,
+                                <span class="bold sector" highlight-data="landlord-sector" highlight-scroll="true" id="landlordDataSector"></span>,
+                                <span class="bold location" highlight-data="landlord-location" highlight-scroll="true" id="landlordDataLocation"></span>,
+                                <span class="bold city" highlight-data="landlord-city" highlight-scroll="true" id="landlordDataCity"></span>,
+                                <span class="bold pin" highlight-data="landlord-pin" highlight-scroll="true" id="landlordDataPin"></span><br>Phone number :
+                                <span class="bold phone" highlight-data="landlord-phone" highlight-scroll="true" id="landlordDataPhone"></span>, email :
+                                <span class="bold email" highlight-data="landlord-email" highlight-scroll="true" id="landlordDataEmail"></span><br> Executing through:
+                                <span class="poa" id="landlordEt" highlight-data="landlord-poa" highlight-scroll="true">Self</span>
+                            </p>
+                        </div>
+                        <p style="text-align:justify;">HEREINAFTER called 'the Licensor' (which expression shall mean and include the Licensor above named and also his/her/their respective heirs, successors, assigns, executors and administrators)</p>
+                        <p style="text-align:center;">AND</p>
+                        <div id="tenantlist">
+                            <p id="tenantDataTemplate" class="template persondata">Name :
+                                <span class="bold lname" highlight-data="tenant-lname" highlight-scroll="true" id="tenantDataLname"></span>
+                                <span class="bold fname" highlight-data="tenant-fname" highlight-scroll="true" id="tenantDataFname"></span>, Age: About
+                                <span class="bold age" highlight-data="tenant-age" highlight-scroll="true" id="tenantDataAge"></span> Years,
+                                <span class="bold gender" highlight-data="tenant-gender" highlight-scroll="true" id="tenantDataGender"></span>, having UID
+                                <span class="bold uid" highlight-data="tenant-uid" highlight-scroll="true" id="tenantDataUid"></span>, PAN
+                                <span class="bold pan" highlight-data="tenant-pan" highlight-scroll="true" id="tenantDataPan"></span>. Residing at:
+                                <span class="bold fno" highlight-data="tenant-fno" highlight-scroll="true" id="tenantDataFno"></span>,
+                                <span class="bold bname" highlight-data="tenant-bname" highlight-scroll="true" id="tenantDataBname"></span>,
+                                <span class="bold sector" highlight-data="tenant-sector" highlight-scroll="true" id="tenantDataSector"></span>,
+                                <span class="bold location" highlight-data="tenant-location" highlight-scroll="true" id="tenantDataLocation"></span>,
+                                <span class="bold city" highlight-data="tenant-city" highlight-scroll="true" id="tenantDataCity"></span>,
+                                <span class="bold pin" highlight-data="tenant-pin" highlight-scroll="true" id="tenantDataPin"></span><br>Phone number :
+                                <span class="bold phone" highlight-data="tenant-phone" highlight-scroll="true" id="tenantDataPhone"></span>, email :
+                                <span class="bold email" highlight-data="tenant-email" highlight-scroll="true" id="tenantDataEmail"></span><br> Executing through:
+                                <span class="poa" id="tenantEt" highlight-data="tenant-poa" highlight-scroll="true">Self</span>
+                            </p>
+                        </div>
+                        <p style="text-align:justify;">HEREINAFTER called 'the Licensee' (which expression shall mean and include only Licensee above named).</p>
+                    </div>
+                    <div style="text-align:justify;">
+                        <p>WHEREAS the Licensor is absolutely seized and possessed of and or otherwise well and sufficiently entitled to all that
+                            constructed portion being unit described in Schedule I hereunder written and are hereafter for the sake of brevity called
+                            or referred to as Licensed Premises and is/are desirous of giving the said premises on Leave and License basis under
+                            Section 24 of the Maharashtra Rent Control Act, 1999. </p>
+                        <p>AND WHEREAS the Licensee herein is in need of temporary premises for <span class="bold" highlight-data="usage"></span>					use has/have approached the Licensor with a request to allow the Licensee herein to use and occupy the said premises
+                            on Leave and License basis for a period of <span class="bold" highlight-data="duration" highlight-scroll="true">11</span>					Months commencing from <span class="bold startdate" highlight-data="startdate" highlight-scroll="true"></span> and ending
+                            on <span highlight-data="enddate" class="bold enddate"></span>, on terms and subject to conditions hereafter appearing.
+                            AND WHEREAS the Licensor have agreed to allow the Licensee herein to use and occupy the said Licensed premises for their
+                            aforesaid <span class="bold" highlight-data="usage"></span> purposes only, on Leave and License basis for above mentioned
+                            period, on terms and subject to conditions hereafter appearing; </p>
+                        <p>NOW THEREFORE IT IS HEREBY AGREED TO, DECLARED AND RECORDED BY AND BETWEEN THE PARTIES HERETO AS FOLLOWS:-</p>
+                        <p><b id="period">1) Period:</b> That the Licensor hereby grants to the Licensee herein a revocable leave and license, to
+                            occupy the Licensed Premises, described in Schedule I hereunder written without creating any tenancy rights or any other
+                            rights, title and interest in favour of the Licensee for a period of <span class="bold" highlight-data="duration" highlight-scroll="true">11</span>					Months commencing from <span class="bold startdate" highlight-data="startdate" highlight-scroll="true"></span> and ending
+                            on <span class="bold enddate" highlight-data="enddate"></span> </p>
+                        <p><b>2) License Fee &amp; Deposit:</b> That the Licensee shall pay to the Licensor License fee as described in 'Rent Details' below. <!-- at the rate of Rs. <span class="bold" -->
+                                <!-- highlight-data="rent" highlight-scroll="true"></span> per month <span id="increment_data" class="chidden">towards the compensation which will be incremented by <span class="bold rate" highlight-data="rate" highlight-scroll="true"></span>%
+                            after every <span class="bold rate" highlight-data="aftermonths" highlight-scroll="true"></span> months</span> --> and Rs.
+                            <span class="bold" highlight-data="deposite" highlight-scroll="true"></span> /- <span id="refundable_data">interest free <b>Refundable</b> deposit</span>,
+                            for the use of the said Licensed premises. The amount of monthly compensation License fee shall be payable within first
+                            five days of the concerned month of Leave and License. </p>
+                            <ul id="dataSlabList" class="list-inline" style="margin-left:20px;"><li><b><u>Rent Details</u></b></li><br></ul>
+                        <p><b>3) Payment of Deposit:</b> That the Licensee have paid / shall pay the above mentioned deposit/premium as mentioned
+                            above by <span class="bold" highlight-data="depositemode" highlight-scroll="true">Cash</span>. Amount Rs.<span class="bold" highlight-data="deposite" highlight-scroll="true"></span>/- . <br>
+                            <span id="transactionDetailData" class="chidden" style="display: none;">
+                                Bank : <span highlight-data="bank" highlight-scroll="true" class="bold"></span> Branch: <span highlight-data="branch" highlight-scroll="true" class="bold"></span> Transaction id: <span highlight-data="transactionid" highlight-scroll="true" class="bold"></span> Date: <span highlight-data="transactiondate" highlight-scroll="true" class="bold" id="transactiondatedata"></span>
+                            </span>
+                        </p>
+                        <p><b>4) Maintenance Charges:</b> That the all outgoings including all rates, taxes, levies, assessment, maintenance charges,
+                            non occupancy charges, etc. in respect of the said premises shall be paid by the Licensor </p>
+                        <p><b>5) Electricity Charges:</b> The licensee herein shall pay the electricity bills directly for energy consumed on the
+                            licensed premises and should submit original receipts to Licensor indicating that the electricity bills are paid. </p>
+                        <p><b>6) Use:</b> That the Licensed premises shall only be used by the Licensee for <span class="bold" highlight-data="usage" highlight-scroll="true"></span> purpose.The Licensee shall maintain the said premises in its existing condition and
+                            damage, if any, caused to the said premises, the same shall be repaired by the Licensee at its own cost subject to normal
+                            wear and tear. The Licensee shall not do anything in the said premises which is or is likely to cause a nuisance to
+                            the other occupants of the said building or to the prejudice in any manner to the rights of Licensor in respect of said
+                            premises or shall not do any unlawful activities prohibited by State or Central Government . </p>
+                        <p><b>7) Alteration:</b> That the Licensee shall not make or permit to do any alteration or addition to the construction
+                            or arrangements (internal or external) to the Licensed premises without previous consent in writing from the Licensor.
+                            </p>
+                        <p><b>8) No Tenancy:</b> That the Licensee shall not claim any tenancy right and shall not have any right to transfer, assign,
+                            and sublet or grant any license or sub-license in respect of the Licensed Premises or any part thereof and also shall
+                            not mortgage or raise any loan against the said premises. </p>
+                        <p><b>9) Inspection:</b> That, the Licensor shall on reasonable notice given by the Licensor to the Licensee shall have
+                            a right of access either by himself / herself / themselves or through authorized representative to enter, view and inspect
+                            the Licensed premises at reasonable intervals. </p>
+                        <p><b>10) Cancellation:</b> Both the parties have agreed to set a lock-in period of <span class="bold lockin" highlight-data="lockin" highlight-scroll="true" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0); color: rgb(51, 51, 51); padding: 0px;">0</span> months during which neither the Licensor shall ask the licensee to vacate the premises,
+                            nor the licensee shall vacate the premises on his own during the lock-in period.In spite of this mandatory clause, if
+                            the licensee leaves the premises for whatsoever reason, he/she shall pay to the Licensor license fee for the remaining
+                        <span highlight-data="value" highlight-scroll="true"></span> lock-in period at the rate of agreed upon in the agreement. On the other hand, Licensor shall compensate the
+                            Licensee for loss and inconvenience caused to the Licensee if he/she has been asked to vacate the premises. the Licensor
+                            shall be entitled to revoke and / or cancel the License hereby granted, by giving notice in writing of one month and
+                            the Licensee too will have the right to vacate the said premises by giving a notice in writing of one month to the
+                            Licensor as mentioned earlier.</p>
+                        <p><b>11) Possession:</b> That the immediately at on the expiration or termination or cancellation of this agreement the
+                            Licensee shall vacate the said premises without delay with all his/her goods and belongings. In the event of the Licensee
+                            failing and / or neglecting to remove himself/herself and / or his/her articles from the said premises on expiry or
+                            sooner determination of this Agreement ,the Licensor shall be entitled to recover damages at the rate of double the
+                            daily amount of compensation per day and or alternatively the Licensor shall be entitled to remove the Licensee and
+                            his/her belongings from the Licensed premises, without recourse to the Court of Law. </p>
+                        <p><b>12) Furniture and Appliances:</b> The said premises is having the Furniture and Appliances mentioned in the Schedule
+                            II. The licensee shall maintain the said Furniture and Appliances in the said premises in its existing condition and
+                            damage, if any, caused to the said Furniture and Appliances, the same shall be repaired by the Licensee/s at its own
+                            cost subject to normal wear and tear </p>
+                        <p><b>13) Miscellaneous:</b>
+                            </p><ul id="dataClauseList" class="hidden">
+
+                            </ul>
+                            <ul id="dataAdvanceClauseList" class="hidden">
+
+                            </ul>
+                            <span highlight-data="extraclause"></span>
+                        <p></p>
+                        <p><b>14) Registration:</b> This Agreement is to be registered and the expenditure of Stamp duty and registration fees and
+                            incidental charges, if any, shall be borne by the <span class="bold paidby" highlight-data="paidby" highlight-scroll="true">Licensee and Licensor</span>.
+                            </p>
+                        <h4 style="text-align:center;">SCHEDULE I</h4>
+                        <p style="text-align:center;">(Being the correct description of premise <span class="bold" highlight-data="properttype" highlight-scroll="true">Flat</span> which is the subject matter of these presents)</p>
+                        <p>All that constructed portion being
+                            <span class="bold" highlight-data="usage"></span> unit bering
+                            <span class="bold" highlight-data="properttype" highlight-scroll="true">Flat</span> No.
+                            <span class="bold" highlight-data="fno" highlight-scroll="true"></span>, Build up:
+                            <span class="bold" highlight-data="area" highlight-scroll="true"></span> Sq. Ft. Situated on
+                            <span class="bold" highlight-data="flno" highlight-scroll="true"></span> floor of building known as
+                            <span class="bold" highlight-data="bname" highlight-scroll="true"></span> standing on the land bearing
+                            <span class="bold" highlight-data="surveytype" highlight-scroll="true"></span>:
+                            <span class="bold" highlight-data="surveyno" highlight-scroll="true"></span> Road:
+                            <span class="bold" highlight-data="sector" highlight-scroll="true"></span> Location:
+                            <span class="bold" highlight-data="location" highlight-scroll="true"></span>,
+                            <span class="bold" highlight-data="district" highlight-scroll="true"></span> PIN:
+                            <span class="bold" highlight-data="pin" highlight-scroll="true"></span>
+                        </p>
+                        <h4 style="text-align:center;">SCHEDULE II</h4>
+                        <p style="text-align:center;">(Being the correct description of Furniture and Appliances in the premise)</p>
+                        <table style="margin:0 auto;text-align:center;" border="1">
+                            <tbody><tr>
+                                <td>Sr. No.</td>
+                                <td>Item</td>
+                                <td>Number of Units</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Fan</td>
+                                <td><span highlight-data="fan" highlight-scroll="true" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0); color: rgb(51, 51, 51); padding: 0px;">0</span></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Tube Light</td>
+                                <td><span highlight-data="tubelight" highlight-scroll="true" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0); color: rgb(51, 51, 51); padding: 0px;">0</span></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Bed</td>
+                                <td><span highlight-data="bed" highlight-scroll="true" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0); color: rgb(51, 51, 51); padding: 0px;">0</span></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Sofa</td>
+                                <td><span highlight-data="sofa" highlight-scroll="true" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0); color: rgb(51, 51, 51); padding: 0px;">0</span></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Table</td>
+                                <td><span highlight-data="table" highlight-scroll="true" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0); color: rgb(51, 51, 51); padding: 0px;">0</span></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Chair</td>
+                                <td><span highlight-data="chair" highlight-scroll="true" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0); color: rgb(51, 51, 51); padding: 0px;">0</span></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>AC</td>
+                                <td><span highlight-data="ac" highlight-scroll="true" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0); color: rgb(51, 51, 51); padding: 0px;">0</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>8</td>
+                                <td>Gyeser</td>
+                                <td><span highlight-data="gyeser" highlight-scroll="true" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0); color: rgb(51, 51, 51); padding: 0px;">0</span></td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Washing Machine</td>
+                                <td><span highlight-data="washingmachine" highlight-scroll="true" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0); color: rgb(51, 51, 51); padding: 0px;">0</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>10</td>
+                                <td>Cupboard</td>
+                                <td><span highlight-data="cupboard" highlight-scroll="true" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0); color: rgb(51, 51, 51); padding: 0px;">0</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>11</td>
+                                <td>Water Cooler</td>
+                                <td><span highlight-data="watercooler" highlight-scroll="true" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0); color: rgb(51, 51, 51); padding: 0px;">0</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>12</td>
+                                <td>Curtains</td>
+                                <td><span highlight-data="curtains" highlight-scroll="true" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0); color: rgb(51, 51, 51); padding: 0px;">0</span></td>
+                            </tr>
+
+                        </tbody></table>
+                        <h4 style="text-align:center;color:#555;">Identifiers</h4>
+                        <hr style="margin-top:0;">
+                        <p id="witness1Data" class="persondata chidden">Name :
+                            <span class="bold lname" highlight-data="witness1-lname" highlight-scroll="true" id="witness1DataLname"></span>
+                            <span class="bold fname" highlight-data="witness1-fname" highlight-scroll="true" id="witness1DataFname"></span>, Age About
+                            <span class="bold age" highlight-data="witness1-age" highlight-scroll="true" id="witness1DataAge"></span> Years, having UID
+                            <span class="bold uid" highlight-data="witness1-uid" highlight-scroll="true" id="witness1DataUid"></span>, PAN
+                            <span class="bold pan" highlight-data="witness1-pan" highlight-scroll="true" id="witness1DataPan"></span> . Residing at:
+                            <span class="bold sector" highlight-data="witness1-sector" highlight-scroll="true" id="witness1DataSector"></span>,
+                            <span class="bold location" highlight-data="witness1-location" highlight-scroll="true" id="witness1DataLocation"></span>,
+                            <span class="bold city" highlight-data="witness1-city" highlight-scroll="true" id="witness1DataCity"></span>,
+                            <span class="bold pin" highlight-data="witness1-pin" highlight-scroll="true" id="witness1DataPin"></span>
+                        </p>
+                        <p id="witness2Data" class="persondata chidden">Name :
+                            <span class="bold lname" highlight-data="witness2-lname" highlight-scroll="true" id="witness2DataLname"></span>
+                            <span class="bold fname" highlight-data="witness2-fname" highlight-scroll="true" id="witness2DataFname"></span>, Age: About
+                            <span class="bold age" highlight-data="witness2-age" highlight-scroll="true" id="witness2DataAge"></span> Years, having UID
+                            <span class="bold uid" highlight-data="witness2-uid" highlight-scroll="true" id="witness2DataUid"></span>, PAN
+                            <span class="bold pan" highlight-data="witness2-pan" highlight-scroll="true" id="witness2DataPan"></span> . Residing at:
+                            <span class="bold sector" highlight-data="witness2-sector" highlight-scroll="true" id="witness2DataSector"></span>,
+                            <span class="bold location" highlight-data="witness2-location" highlight-scroll="true" id="witness2DataLocation"></span>,
+                            <span class="bold city" highlight-data="witness2-city" highlight-scroll="true" id="witness2DataCity"></span>,
+                            <span class="bold pin" highlight-data="witness2-pin" highlight-scroll="true" id="witness2DataPin"></span>
+                        </p>
+                    </div>
+                    <div style="height:20px;">
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+
+			<div id="mask" class="container-fluid" style="background:rgba(0,0,0,0.5);width:100%;height:100%;position:fixed;top:0;left:0;display:none;">
+			<div class="maskdiv" style="width:550px;background:#fff;margin:100px auto;box-shadow:0 0 10px rgba(0,0,0,0.8);padding:20px;">
+				<h3>Terms and Condition of Services</h3>
+				<hr>
+				<p class="masktext" style="display:block;width:100%;height:250px;overflow-x:auto;">
+
+					<b>1. What LegalDocs is &amp; What it is not?</b>
+					<br> LegalDocs is an organization which is drived by a mission to smoothen the complex &amp; time-consuming government process
+					of housing rental registration. LegalDocs is not an agent or broker, so no recurring charges or commission will be levied
+					upon end-user of our product or service bearer. LegalDocs is founded with service-oriented architecture funded by its
+					own product which will serve an users. LegalDocs does not provide any help for lease related affairs, it only assist
+					in leave &amp; license registration agreement. LegalDocs advises to its users that they should consult an advocate or solicitor
+					before entering into any agreement.
+					<br>
+					<b>2. RSE LegalDocs Pvt. Ltd. hereby presents its responsibilities &amp; non-responsibilities.</b>
+					<br> RSE LegalDocs Pvt. Ltd. is responsible for: Integrity of "mobile rental application" the tool or interface it
+					offers.
+
+					<br>Reducing the complexity in time-consuming government process of housing rental registration.
+					<br>Security of your personal data
+					<br>Delivery of PDF copy of Leave &amp; license agreement
+					<br>Follow up with government officials till completion of the registration process
+					<br>Provide status on frequent basis of the progress in RSE LegalDocs process
+					<br>Providing customer support
+					<br>Helpful points about leave and license agreement
+					<br>LegalDocs is not responsible for:
+
+					<br>Any disputed property
+					<br>Delays by government due to unforeseen reasons
+					<br>Any delay in appointments scheduled by Registration offices.
+					<br>Incorrect data submission by end-user
+					<br>
+					<b>3. End-users are required to furnish following details at the time of registration through our web application-</b>
+					<br>
+					<br>Respective names, contact numbers, email_id"s
+					<br>Current addresses of respective authority, address of renting property
+					<br>Leave and License period, other relative terms &amp; conditions
+					<br>Rent details and refundable or non-refundable deposits details.
+					<br>Finally, making an appropriate payment
+					<br>Failing to do so, their registration with us will not get completed.
+					<br>
+					<b>4.Cancellation Policy</b>
+					<br> In case you wish to cancel your order after completing the whole procedure of putting up the detailed information
+					and paying your amount via any payment mode then in that scenario you need to inform us via any communication channel
+					viz. phone, mail or personally. While informing through mail you should mention "Request Cancellation" in the subject
+					line. And, in the body of the mail it is mandatory to mention your request number, document id and your name and contact
+					number. Also, you can mention your reason of cancellation though it"s optional. After fulfilling the mentioned criteria
+					send it to the rent@legaldocs.co.in. The refund payment will be made in accordance with our below mentioned refund policy
+					which is specified according to the most likely cases of our model. In case if we receive your cancellation request after
+					the final delivery of your registered documents then your cancellation request will be considered null and void.
+					<br>
+					<b>5.Refund Policy </b>
+					<br> Subject to your compliance with our above mentioned cancellation policy we are liable to refund your payment in
+					the following cases which is based upon the state of ongoing process.
+					<br>Case 1: Once the stamp duty &amp; registration fees got paid by our company through GRAS or any authentic payment mode
+					then 20% of the total amount paid will be refunded back.
+					<br>Case 2: In case if you inform us to cancel the request before we make your payment for stamp duty &amp; registration
+					then 70% of the total amount paid will be refunded back.
+					<br>
+					<b>6.Communication Policy </b>
+
+					<br>a.By accepting the terms and conditions the customer accepts that LegalDocs may send the alerts to the mobile phone
+					number provided by the customer while registering for the service or to any such number replaced and informed by the
+					customer. The customer acknowledges that the alerts will be received only if the mobile phone is in "On" mode to receive
+					the SMS. If the mobile phone is in "off"" mode then the customer may not get / get after delay any alerts sent during
+					such period.
+					<br>b. LegalDocs will make best efforts to provide the service and it shall be deemed that the customer shall have received
+					the information sent from LegalDocs as an alert on the mobile phone number provided during the course of registration
+					with our interface and LegalDocs shall not be under any obligation to confirm the authenticity of the person(s) receiving
+					the alert. The customer cannot hold LegalDocs liable for non-availability of the service in any manner whatsoever.
+					<br>c. The customer acknowledges that the SMS service provided by LegalDocs is an additional facility provided for the
+					customer"s convenience and that it may be susceptible to error, omission and/ or inaccuracy. In the event the customer
+					observes any error in the information provided in the alert, LegalDocs shall be immediately informed about the same by
+					the customer and LegalDocs will make best possible efforts to rectify the error as early as possible. The customer shall
+					not hold LegalDocs liable for any loss, damages, claim, expense including legal cost that may be incurred/ suffered by
+					the customer on account of the SMS facility.
+					<br>d. The customer acknowledges that the clarity, readability, accuracy, and promptness of providing the service depend
+					on many factors including the infrastructure, connectivity of the service provider. LegalDocs shall not be responsible
+					for any non-delivery, delayed delivery or distortion of the alert in any way whatsoever.
+					<br>e. The customer agrees to indemnify and hold harmless LegalDocs as an organization and the SMS service provider
+					including its officials from any damages, claims, demands, proceedings, loss, cost, charges and expenses whatsoever including
+					legal charges.
+					<br>f. By accepting the terms and conditions the customer acknowledges and agrees that LegalDocs may call the mobile
+					phone number provided by the customer while registering for the service or to any such number replaced and informed by
+					the customer, for the purpose of collecting feedback from the customer regarding their experience.
+					<br>g. Grievances and claims related to LegalDocs service or product should be reported to LegalDocs support team as
+					soon as possible.
+					<br> 7. The party of the second part has agreed to pay to the party of the first part the charges given below in consideration
+					of the e-registration services provided by it, failing to do so,the registration process will not be started. But the party of the first part charges some more amount
+					to deliver an improved user experience through a mobile application which helps online tracking of leave and licence
+					application on mobile,print outs of the original document on legal paper,courier service,software charges etc.
+					<br> Range of charges (to govt. and to LegalDocs)
+					<br>a. Registration fee(to govt.) Rs. 1000/-
+					<br>b. Stamp duty (to govt.) xxx (as per Govt. stamp calculator)
+					<br>c. Government Authorisation fee (to govt.) Rs. 150/-
+					<br>d. Government approved E-Registration charges Rs. 550/-
+					<br>e. Single visit Government approved fee Rs. 500/-
+					<br>f. Other LegalDocs charges (Software fee,Advisory etc) Rs. 399/-
+					<br>g. Online payment gateway Charges(waived off for the moment,but can be charged if there is cancellation.)
+
+					<br> 8. The party of the first part makes it clear that Rs. 500/- are charged as door-step service charges within a
+					defined circle based on the distance from LegalDocs offices. Beyond a fixed defined distance it is charged maximum of
+					Rs. 200/- extra. The information about the distance is available on customer support number.
+					<br> 9. The party of First part further makes it clear that as a company it does not provide any witness for registration.
+					It always recommends that the witness needs to be of either licensor's or licensee's acquaintance. However, if there
+					are practical difficulties for customers in finding a witness the LegalDocs executive that meets the customer at doorstep
+					may help in finding one. It may be noted that in case if anybody charges any services for witness, the same are not paid
+					to LegalDocs, as a company.
+					<br> *Subjected to Navi Mumbai Jurisdiction
+				</p>
+				<button class="btn btn-primary" style="float:right;margin:5px;" onclick="closeMask()">I Accept</button>
+			</div>
+		</div>
+
+		<!-- Tour -->
+		<link rel="stylesheet" href="./Agreement Draft_files/bootstrap-tour-standalone.min.css">
+		<script src="./Agreement Draft_files/bootstrap-tour-standalone.min.js.download"></script>
+		<script src="./Agreement Draft_files/tour.js.download"></script>
+		<!-- /Tour -->
+
+	<div id="maskconfirm" class="container-fluid chidden" style="background:rgba(0,0,0,0.5);width:100%;height:100%;position:fixed;top:0;left:0;">
+		<div class="maskdiv" style="width:550px;background:#fff;margin:20px auto;box-shadow:0 0 10px rgba(0,0,0,0.8);padding:20px;">
+			<div id="maskconfirmprocessing" class="chidden">
+				<svg style="display:block;margin:auto;" width="50px" height="50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-ring-alt">
+					<rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>
+					<circle cx="50" cy="50" r="40" stroke="#c4dded" fill="none" stroke-width="10" stroke-linecap="round"></circle>
+					<circle cx="50" cy="50" r="40" stroke="#3498db" fill="none" stroke-width="6" stroke-linecap="round">
+						<animate attributeName="stroke-dashoffset" dur="2s" repeatCount="indefinite" from="0" to="502"></animate>
+						<animate attributeName="stroke-dasharray" dur="2s" repeatCount="indefinite" values="150.6 100.4;1 250;150.6 100.4"></animate>
+					</circle>
+				</svg>
+				<p class="text-info text-center">Please wait we are processing your form...</p>
+			</div>
+
+			<div id="maskconfirmbody">
+				<h3>Attention!</h3>
+				<div class="warning-content">
+				<span style="font-size:23px;color:red;">NO CHANGES CAN BE DONE AFTER SUBMITTING</span>
+
+                <p>Kindly make sure you have filled Landord's/Tenant's and Property details correctly. (Witness details will be taken at
+					verification). <span style="color:red">You wont be able to change agreement deatils after booking an appointment.</span>
+				<b>No changes can be done after biometric verification is done.</b>
+                </p>
+				<hr>
+				<h3>Share this agreement</h3>
+				<p>Before you take an appointment please share this draft with every party in this agreement.
+				Kindly save and share the agreement draft with all participants of agreement.</p>
+				</div>
+
+				<hr>
+                <p style="font-size: 15px;">By booking an appointment I confirm that I have put all correct details, and I understand that no changes can be made after submitting.</p>
+				<button class="btn btn-primary" style="float:right;margin-left:10px;margin-bottom: 10px;" onclick="book()">Confirm Appointment</button>
+				<button class="btn btn-primary" style="float:right;margin-left:10px;" onclick="printDoc()">Save PDF</button>
+				<button class="btn btn-primary" style="float:right;margin-left:10px;" onclick="recheckagreement()">Recheck</button>
+				<div class="clr"></div>
+		    </div>
+		</div>
+	</div>
+
+	<style>
+		.modalclause{
+			padding:5px;
+			cursor:pointer;
+		}
+		.modalclause:hover{
+			background:#eee;
+		}
+	</style>
+
+	<!-- Modals -->
+	<div id="personModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+
+				</div>
+				<div class="modal-body">
+					<input type="hidden" id="modal-edit-type">
+					<input type="hidden" id="modal-edit-id">
+					<div class="alert alert-danger chidden" id="errorPerson">
+						<i class="glyphicon glyphicon-info-sign"></i> Please fill the appropriate data in highlighted fields.
+					</div>
+					<div class="formsection">
+                        <div class="col-sm-2 formfield">
+                            <p>Gender</p>
+                            <select fieldvalidator="gender" fieldvalidator-live="true" id="personGender" placeholder="gender">
+                                <option value="">Select</option>
+                                <option value="Male">Male (Mr)</option>
+                                <option value="Female">Female (Ms)</option>
+                                <option value="Female (Mrs)">Female (Mrs)</option>
+                            </select>
+                        </div>
+						<div class="col-sm-4 formfield">
+							<p>Last Name<a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#" data-toggle="tooltip" tabindex="-1" data-placement="bottom" title="" data-original-title="As mentioned on Adhar card.">?</a></p>
+							<input type="text" fieldvalidator="name" fieldvalidator-live="true" id="personLname" placeholder="">
+						</div>
+						<div class="col-sm-4 formfield">
+							<p>First Name<a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#" data-toggle="tooltip" tabindex="-1" data-placement="bottom" title="" data-original-title="As mentioned on Adhar card. + If any middle name mention here.">?</a></p>
+							<input type="text" data-placement="bottom" fieldvalidator="name" fieldvalidator-live="true" placeholder="" id="personFname">
+						</div>
+						<div class="col-sm-2 formfield">
+							<p>Age</p>
+							<input type="number" placeholder="" fieldvalidator="age" fieldvalidator-live="true" id="personAge">
+						</div>
+
+						<div class="clr"></div>
+					</div>
+					<div class="formsection">
+						<div class="col-sm-6 formfield">
+							<p>UID (Adhar number)</p>
+							<input type="text" fieldvalidator="text" placeholder="" fieldvalidator-live="true" id="personUid">
+						</div>
+						<div class="col-sm-6 formfield">
+							<p>PAN <span id="sp-is-pan-optional"></span></p>
+							<input type="text" placeholder="" fieldvalidator="pan" fieldvalidator-live="true" id="personPan">
+						</div>
+						<div class="clr"></div>
+					</div>
+					<div class="formsection">
+						<b>Contact Details</b>
+						<hr>
+						<div class="col-sm-6 formfield">
+							<p>Phone number <a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#" data-toggle="tooltip" tabindex="-1" title="" data-original-title="All updates will be shared on this number">?</a> </p>
+							<input type="text" fieldvalidator="phone" fieldvalidator-live="true" id="personPhone" placeholder="">
+						</div>
+						<div class="col-sm-6 formfield">
+							<p>Email address <a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#" data-toggle="tooltip" tabindex="-1" title="" data-original-title="Registered agreement will be sent on this email.">?</a> </p>
+							<input type="text" fieldvalidator="email" fieldvalidator-live="true" id="personEmail" placeholder="">
+						</div>
+						<div class="clr"></div>
+					</div>
+					<div class="formsection">
+						<b>Address (As mentioned on Adhar card)</b>
+						<hr>
+						<div class="col-sm-9 formfield">
+							<p>Building name</p>
+							<input type="text" fieldvalidator="alphanumeric" fieldvalidator-live="true" id="personBname" placeholder="">
+						</div>
+						<div class="col-sm-3 formfield">
+							<p>Flat no.</p>
+							<input type="text" fieldvalidator="alphanumeric" fieldvalidator-live="true" id="personFno" placeholder="">
+						</div>
+						<div class="col-sm-6 formfield">
+							<p>Road / Sector</p>
+							<input type="text" fieldvalidator="alphanumeric" fieldvalidator-live="true" id="personSector" placeholder="">
+						</div>
+						<div class="col-sm-6 formfield">
+							<p>Location</p>
+							<input type="text" fieldvalidator="alphanumeric" fieldvalidator-live="true" id="personLocation" placeholder="">
+						</div>
+						<div class="col-sm-8 formfield">
+							<p>Village / City</p>
+							<input type="text" fieldvalidator="name" fieldvalidator-live="true" id="personCity" placeholder="">
+						</div>
+						<div class="col-sm-4 formfield">
+							<p>PIN</p>
+							<input type="text" fieldvalidator="pin" fieldvalidator-live="true" id="personPin" placeholder="">
+						</div>
+
+						<div class="clr"></div>
+					</div>
+					<div class="formsection">
+						<b>Executing through <a href="https://rentagreementregistration.com/draft.php?fd=30b2a3b6329f93d7f91647d07d86f15a&amp;pl=1562152295&amp;c=873fc78ec1f638fc62af22f2e7beb5ad&amp;rd=1#" data-toggle="tooltip" tabindex="-1" title="" data-original-title="In case of Power of Attorney mention POA name.">?</a></b>
+						<hr>
+						<div class="col-sm-12 formfield">
+							<input type="checkbox" style="width:20px !important;float:left;" onclick="showPoa(this,&#39;person&#39;)" id="personPoa">
+							<p>Power Of Attorney</p>
+						</div>
+						<div id="personPoaDetail" class="chidden">
+							<div class="col-sm-3 formfield">
+								<p>POA Name : </p>
+							</div>
+							<div class="col-sm-6 formfield">
+								<input type="text" id="personPoaName" fieldvalidator="name" fieldvalidator-live="true" placeholder="">
+							</div>
+
+							<div class="col-sm-12 formfield">
+								<p class="text text-info"><a class="text text-danger" href="https://rentagreementregistration.com/downloads/poa_procedure.pdf" target="_blank" download="poa_procedure.pdf">Click here</a> To know the procedure for POA. Kindly send the POA pdf document to
+									<u>rent@legaldocs.co.in</u> with subject line <b>POA 9492628200</b></p>
+								<p class="text text-danger">Add the POA details by clicking on Add POA button</p>
+							</div>
+						</div>
+						<div class="clr"></div>
+					</div>
+
+					<script>
+						$("#personPoa").on('click', function(e){
+							if(e.target.checked){
+								$("#personPoaName").val("");
+							} else {
+								$("#personPoaName").val("Self");
+							}
+						})
+					</script>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-success" onclick="savePerson(this)">Save</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="clausesModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">×</button>
+					<h4 class="modal-title">List of reference clauses</h4>
+				</div>
+				<div class="modal-body">
+					<div class="modalclause">
+						<b>Co-Tenant without Aadhar card</b>
+						<p>[Name] age about [age] years, having PAN number [PAN-number], permanent resident of [Address] , will be equal party to this agreement as a licensee.</p>
+					</div>
+					<div class="modalclause">
+						<b>Co-Landlord without Aadhar card</b>
+						<p>[Name] age about [age] years, having PAN number [PAN-number], permanent resident of [Address] , will be equal party to this agreement as a licensor.</p>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="errorModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">×</button>
+					<h4 class="modal-title" style="color:#e74c3c;"><i class="glyphicon glyphicon-info-sign-circle"></i> Something went wrong!</h4>
+					<p>No worries. We will solve the issue in minutes. Just copy the following text and mail us to <b>rent@legaldocs.co.in</b> with subject as your document number and inform us on 9022119922 / 7303240250</p>
+				</div>
+				<div class="modal-body">
+					<textarea id="tx-error-json" style="width:100%;padding:10px;height:200px;"></textarea>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div id="upgradeModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">×</button>
+					<h4 class="modal-title" style="color:#e74c3c;">PLANS</h4>
+					<p>Choose Plan to Upgrade</p>
+				</div>
+				<div class="modal-body">
+                    <div id="div-plan-premium" class="col-sm-6" style="margin-top:5px;">
+                        <div style="background:rgba(52,73,94,0.5);margin-right:1px;padding:10px;">
+                            <h4 style="color:#fff; text-align:center;">Premium</h4>
+                            <hr style="margin-top:5px;">
+                            <h5 style="color:#fff; text-align:center;">Registered Agreement  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 426.667 426.667" style="height:15px; width:15px; enable-background:new 0 0 426.667 426.667;" xml:space="preserve"><path style="fill:#6AC259;" d="M213.333,0C95.518,0,0,95.514,0,213.333s95.518,213.333,213.333,213.333 c117.828,0,213.333-95.514,213.333-213.333S331.157,0,213.333,0z M174.199,322.918l-93.935-93.931l31.309-31.309l62.626,62.622 l140.894-140.898l31.309,31.309L174.199,322.918z"></path><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></h5>
+                            <h5 style="color:#fff; text-align:center;">Door Step Visit  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 426.667 426.667" style="height:15px; width:15px; enable-background:new 0 0 426.667 426.667;" xml:space="preserve"><path style="fill:#6AC259;" d="M213.333,0C95.518,0,0,95.514,0,213.333s95.518,213.333,213.333,213.333 c117.828,0,213.333-95.514,213.333-213.333S331.157,0,213.333,0z M174.199,322.918l-93.935-93.931l31.309-31.309l62.626,62.622 l140.894-140.898l31.309,31.309L174.199,322.918z"></path><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></h5>
+                            <h5 style="color:#fff; text-align:center;">Seprate Visits for Landlord &amp; Tenant  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 426.667 426.667" style="height:15px; width:15px; enable-background:new 0 0 426.667 426.667;" xml:space="preserve"><path style="fill:#6AC259;" d="M213.333,0C95.518,0,0,95.514,0,213.333s95.518,213.333,213.333,213.333 c117.828,0,213.333-95.514,213.333-213.333S331.157,0,213.333,0z M174.199,322.918l-93.935-93.931l31.309-31.309l62.626,62.622 l140.894-140.898l31.309,31.309L174.199,322.918z"></path><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></h5>
+                            <h5 style="color:#fff; text-align:center;">Consultation while Drafting <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 426.667 426.667" style="height:15px; width:15px; enable-background:new 0 0 426.667 426.667;" xml:space="preserve"><path style="fill:#F05228;" d="M213.333,0C95.514,0,0,95.514,0,213.333s95.514,213.333,213.333,213.333 s213.333-95.514,213.333-213.333S331.153,0,213.333,0z M330.995,276.689l-54.302,54.306l-63.36-63.356l-63.36,63.36l-54.302-54.31 l63.356-63.356l-63.356-63.36l54.302-54.302l63.36,63.356l63.36-63.356l54.302,54.302l-63.356,63.36L330.995,276.689z"></path><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></h5>
+
+                            <button id="btn-upgrade-premium" class="btn btn-primary" style="display:block;margin:auto;width:200px;" onclick="upgradeCurrentPlan(1)">Choose Premium</button>
+                        </div>
+                    </div>
+                    <div id="div-plan-deluxe" class="col-sm-6" style="margin-top:5px;">
+                        <div style="background:rgba(52,73,94,0.5);margin-left:1px;padding:10px;">
+                            <h4 style="color:#fff; text-align:center;">Deluxe</h4>
+                            <hr style="margin-top:5px;">
+                            <h5 style="color:#fff; text-align:center;">Registered Agreement  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 426.667 426.667" style="height:15px; width:15px; enable-background:new 0 0 426.667 426.667;" xml:space="preserve"><path style="fill:#6AC259;" d="M213.333,0C95.518,0,0,95.514,0,213.333s95.518,213.333,213.333,213.333 c117.828,0,213.333-95.514,213.333-213.333S331.157,0,213.333,0z M174.199,322.918l-93.935-93.931l31.309-31.309l62.626,62.622 l140.894-140.898l31.309,31.309L174.199,322.918z"></path><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></h5>
+                            <h5 style="color:#fff; text-align:center;">Door Step Visit  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 426.667 426.667" style="height:15px; width:15px; enable-background:new 0 0 426.667 426.667;" xml:space="preserve"><path style="fill:#6AC259;" d="M213.333,0C95.518,0,0,95.514,0,213.333s95.518,213.333,213.333,213.333 c117.828,0,213.333-95.514,213.333-213.333S331.157,0,213.333,0z M174.199,322.918l-93.935-93.931l31.309-31.309l62.626,62.622 l140.894-140.898l31.309,31.309L174.199,322.918z"></path><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></h5>
+                            <h5 style="color:#fff; text-align:center;">Seprate Visits for Landlord &amp; Tenant  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 426.667 426.667" style="height:15px; width:15px; enable-background:new 0 0 426.667 426.667;" xml:space="preserve"><path style="fill:#6AC259;" d="M213.333,0C95.518,0,0,95.514,0,213.333s95.518,213.333,213.333,213.333 c117.828,0,213.333-95.514,213.333-213.333S331.157,0,213.333,0z M174.199,322.918l-93.935-93.931l31.309-31.309l62.626,62.622 l140.894-140.898l31.309,31.309L174.199,322.918z"></path><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></h5>
+                            <h5 style="color:#fff; text-align:center;">Consultation while Drafting  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 426.667 426.667" style="height:15px; width:15px; enable-background:new 0 0 426.667 426.667;" xml:space="preserve"><path style="fill:#6AC259;" d="M213.333,0C95.518,0,0,95.514,0,213.333s95.518,213.333,213.333,213.333 c117.828,0,213.333-95.514,213.333-213.333S331.157,0,213.333,0z M174.199,322.918l-93.935-93.931l31.309-31.309l62.626,62.622 l140.894-140.898l31.309,31.309L174.199,322.918z"></path><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></h5>
+
+                            <button id="btn-upgrade-deluxe" class="btn btn-primary" style="display:block;margin:auto;width:200px;" onclick="upgradeCurrentPlan(2)">Choose Premium</button>
+                        </div>
+                    </div>
+                    <div class="clr" style="height:25px;"></div>
+					<!-- <div id="div-ao-pi" class="col-sm-3" style="margin-top:5px;">
+                        <div style="background:rgba(52,73,94,0.5);margin-right:1px;padding:10px;">
+                            <h4 style="color:#fff; text-align:center;">Add-on</h4>
+                            <hr style="margin-top:5px;">
+                            <h5 style="color:#fff; text-align:center;">Police Intimation</h5>
+
+                            <button id="btn-ao-pi" class="btn btn-success" style="display:block;margin:auto;width:40px;" onclick="includeAddOn()"><big>+</big></button>
+                        </div>
+                    </div>
+					<div class="clr" style="height:25px;"></div> -->
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+    </div>
+
+    <div id="paymentModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">×</button>
+					<h4 class="modal-title" style="color:#e74c3c;">Payment Remaining</h4>
+				</div>
+				<div class="modal-body">
+                    <p>You won't be able to go forward without making payment for this document. Would you like to open Payment page now?</p>
+				</div>
+				<div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" onclick="redirectoToPayment()">Yes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="emailModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4 class="modal-title">Share Reference Draft via Email</h4>
+			</div>
+			<div class="modal-body">
+				<!-- <h5>Draft Download Link</h5>
+				<p>Share This link to download reference draft : <span id="link"></span></p> -->
+				<div class="mail">
+				<!-- <p align="center">OR</p> -->
+				<h5>Share Draft by Mail</h5>
+				<p><small>Share Limit : <span id="count"></span>/5  </small></p>
+				<div class="form-section people-details" id="div-people-details"></div>
+				</div>
+			</div>
+			<div class="alert alert-success" id="div-alert-msg" style="display:none;">
+				<strong>Shared Successfully!</strong>
+			</div>
+			<div class="alert alert-danger" id="err-limit" style="display:none;">
+				<strong>Max Limit For Sharing exceeded! Kindly Share the link to download draft.</strong>
+			</div>
+			<div class="modal-footer share-footer">
+				<button type="button" class="btn btn-primary" id="send-email" data-json="{&quot;person&quot;:[],&quot;propertytype&quot;:&quot;Flat&quot;,&quot;area&quot;:&quot;&quot;,&quot;serveytype&quot;:&quot;&quot;,&quot;serveyno&quot;:&quot;&quot;,&quot;bname&quot;:&quot;&quot;,&quot;fno&quot;:&quot;&quot;,&quot;flno&quot;:&quot;&quot;,&quot;sector&quot;:&quot;&quot;,&quot;location&quot;:&quot;&quot;,&quot;city&quot;:&quot;&quot;,&quot;pin&quot;:&quot;&quot;,&quot;use&quot;:&quot;&quot;,&quot;fan&quot;:&quot;&quot;,&quot;tubelight&quot;:&quot;&quot;,&quot;bed&quot;:&quot;&quot;,&quot;sofa&quot;:&quot;&quot;,&quot;table&quot;:&quot;&quot;,&quot;chair&quot;:&quot;&quot;,&quot;ac&quot;:&quot;&quot;,&quot;gyeser&quot;:&quot;&quot;,&quot;clauses&quot;:[],&quot;rent&quot;:&quot;&quot;,&quot;duration&quot;:&quot;11&quot;,&quot;deposite&quot;:&quot;&quot;,&quot;mode&quot;:&quot;Cash&quot;,&quot;bank&quot;:&quot;&quot;,&quot;branch&quot;:&quot;&quot;,&quot;transactionid&quot;:&quot;&quot;,&quot;transactiondate&quot;:&quot;&quot;,&quot;refundable&quot;:&quot;Refundable&quot;,&quot;startdate&quot;:&quot;&quot;,&quot;paidby&quot;:&quot;Licensee and Licensor&quot;,&quot;lockin&quot;:&quot;0&quot;,&quot;appointmentAddress&quot;:&quot;&quot;,&quot;plan&quot;:&quot;&quot;,&quot;appliedCode&quot;:&quot;&quot;,&quot;appliedAmount&quot;:&quot;&quot;}" onclick="sendEmail(this)">Send</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+			</div>
+			</div>
+
+		</div>
+	</div>
+
+<!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5ab36e394b401e45400df300/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+
+
+
+
+<script src="./Agreement Draft_files/HighlightField.min.js.download"></script>
+<script src="./Agreement Draft_files/FieldValidator.min.js.download"></script>
+<script src="./Agreement Draft_files/init.js.download"></script><style>[highlight-data] {-webkit-transition: background 0.5s linear;-moz-transition: background 0.5s linear;-ms-transition: background 0.5s linear;-o-transition:background 0.5s linear;transition: background 0.5s linear;display:inline-block;}</style><style>[fieldvalidator]{}</style>
+<script src="./Agreement Draft_files/draft.js.download"></script>
+<script src="./Agreement Draft_files/save.js.download"></script>
+
+<script>
+	var OVERVIEW = false;
+
+	var piValue=$("#inp-pi-value").val();
+	var amountReceived=$("#inp-amount-received").val();
+    if(Number(amountReceived) > 0){
+        $(".offer").hide();
+    }
+	if(piValue != "0"){
+		if(amountReceived != ""){
+			if(Number(amountReceived) > 0){
+				$("#div-poilce-intimation").hide();
+			}
+		}
+		$("#post-pi").val("1");
+		$("#post-pre-pi").val("1");
+		$("#cb-police-intimation").prop('checked', true);
+		var totalAddOnsValue = Number($("#inp-add-ons-value").val());
+		totalAddOnsValue += Number($("#inp-pi-price").val());
+		$("#sp-add-ons-total").html(totalAddOnsValue);
+		$("#inp-add-ons-value").val(totalAddOnsValue);
+	}
+	$("#cb-police-intimation").on('change',function(e){
+		var status = $(e.target).prop("checked");
+        var totalAddOnsValue = Number($("#inp-add-ons-value").val());
+        if(status==true){
+			totalAddOnsValue += Number($("#inp-pi-price").val());
+			$("#post-pi").val("1");
+        }else{
+			totalAddOnsValue -= Number($("#inp-pi-price").val());
+			$("#post-pi").val("0");
+		}
+		$("#sp-add-ons-value").html(totalAddOnsValue);
+		$("#inp-add-ons-value").val(totalAddOnsValue);
+
+		calculateCharges();
+	})
+    $(".modalclause").click(function () {
+        var clauseText = this.getElementsByTagName("p")[0].innerHTML;
+        $("#clauseText").val(clauseText);
+        $('#clausesModal').modal('hide');
+    });
+    function freez(st) {
+        if (!OVERVIEW) {
+            if (st != 0) {
+                $("#formcontainer").hide();
+                $("#optcontainer").show();
+            }
+        } else {
+            if (st != 0) {
+                _("header").style.background = "#ea24a3";
+            }
+        }
+    }
+    function recheckagreement() {
+        $("#maskconfirm").hide();
+    }
+    function showUpgradeModal() {
+        var plan = $("#inp-plan").val();
+
+        if(plan == "basic"){
+            $("#btn-upgrade-premium").html("Choose Premium");
+            $("#btn-upgrade-premium").prop("disabled",false);
+            $("#btn-upgrade-deluxe").html("Choose Deluxe");
+            $("#btn-upgrade-deluxe").prop("disabled",false);
+        }else if(plan == "premium"){
+            $("#btn-upgrade-premium").html("Currently Active");
+            $("#btn-upgrade-premium").prop("disabled",true);
+            $("#btn-upgrade-deluxe").html("Choose Deluxe");
+            $("#btn-upgrade-deluxe").prop("disabled",false);
+        }else if(plan == "deluxe"){
+            $("#btn-upgrade-premium").html("Choose Premium");
+            $("#btn-upgrade-premium").prop("disabled",true);
+            $("#btn-upgrade-deluxe").html("Currently Active");
+            $("#btn-upgrade-deluxe").prop("disabled",true);
+        }
+
+        $('#upgradeModal').modal('show');
+    }
+    function upgradeCurrentPlan(planId) {
+        if(planId == 1){
+            var cnf=confirm("Are you sure you want to upgrade your Basic Plan to Premium Plan?");
+            if(cnf){
+                $("#inp-plan").val("premium");
+                saveForm();
+                $("#div-second-appointment").show();
+                $(".sp-plan-upgrade").html("Your plan have been successfully upgraded. Your revised amount is calculated.")
+
+                $('#upgradeModal').modal('hide');
+                $("#post-visits").val(2);
+                calculateCharges();
+            }
+        }else if(planId == 2){
+            var cnf=confirm("Are you sure you want to upgrade your Premium Plan to Deluxe Plan?");
+            if(cnf){
+                $("#inp-plan").val("deluxe");
+                saveForm();
+                $("#div-second-appointment").show();
+                $(".sp-plan-upgrade").html("Your plan have been successfully upgraded. Your revised amount is calculated.")
+
+                $('#upgradeModal').modal('hide');
+                $("#post-visits").val(2);
+                calculateCharges();
+            }
+        }
+    }
+    function redirectoToPayment(){
+        $('#upgradeModal').modal('hide');
+        window.location = "plan.php";
+    }
+    function bookConfirm() {
+        saveForm();
+
+        var paymentReceived = Number($(".sp-received-amount").html());
+
+        if(paymentReceived > 0){
+            if ($("#inp-poa-attachment").attr("data-url") == "false") {
+                alert("please upload pdf of scanned poa document");
+            } else {
+                if($("#inp-plan").val() == "basic"){
+                    if (_("appointmentAddress1").value == "") {
+                        alert("Please mention address for appointment");
+                    } else {
+                        var appointmentdate = _("appointmentdate").validate();
+                        var visits = $("#post-visits").val();
+                        if (appointmentdate && visits) {
+                            $("#post-fjson").val(saveForm(1));
+                            $("#maskconfirm").show();
+                        }
+                    }
+                }else{
+                    if (_("appointmentAddress1").value == "" || _("appointmentAddress2").value == "") {
+                        alert("Please mention address for appointment");
+                    } else {
+                        var appointmentdate = _("appointmentdate").validate();
+                        var visits = $("#post-visits").val();
+                        if (appointmentdate && visits) {
+                            $("#post-fjson").val(saveForm(1));
+                            $("#maskconfirm").show();
+                        }
+                    }
+                }
+            }
+        }else{
+            $("#paymentModal").modal("show");
+        }
+    }
+    function book() {
+		var piStat=$("#post-pi").val();
+		sendmailTracking(piStat);
+        $("#maskconfirmbody").hide();
+        $("#maskconfirmprocessing").show();
+        _("finalform").submit();
+    }
+    // function howtoSave() {
+    //     popupwindow("http://rentagreementregistration.com/how_to_save.html", "ViewHelp", 700, 500);
+    // }
+
+	function sendmailTracking(pi){
+		var docno=$("#inp-docno").val();
+		var phone=$("#inp-phone").val();
+		var token=$("#inp-ptoken").val();
+		$.ajax({
+            type: 'POST',
+            url: ROOT+'emails/tracking_mail.php',
+            data: 'docno=' + docno + '&phone=' + phone  + '&token='+token+'&pi='+pi,
+            success: function (res) {
+                if (res.status == "success") {
+
+				}
+            }
+        })
+	}
+
+	// function sendMailPiPromotion(){
+	// 	var docno=$("#inp-docno").val();
+	// 	var phone=$("#inp-phone").val();
+	// 	var token=$("#inp-ptoken").val();
+	// 	$.ajax({
+    //         type: 'POST',
+    //         url: 'emails/pi_promotion_email.php',
+    //         data: 'docNo=' + docno + '&phone=' + phone  + '&token='+token,
+    //         success: function (res) {
+    //             if (res.status == "success") {
+
+	// 			}
+    //         }
+    //     })
+	// }
+
+
+    function popupwindow(url, title, w, h) {
+        var left = (screen.width / 2) - (w / 2);
+        var top = (screen.height / 2) - (h / 2);
+        return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+    }
+    var freezState = 0;
+    freez(freezState);
+</script>
+<script type="text/javascript">
+    jQuery.fn.extend({
+        sval: function () {
+            var $target = this;
+            var val = $target.val();
+            val = val.replace(/\t/g, " ");
+            val = val.replace(/"/g, '\"');
+            val = val.replace(/\n/g, ' ');
+            val = val.replace(/\\/g, '\\\\');
+            return val;
+        },
+        stext: function () {
+            var $target = this;
+            var val = $target.text();
+            val = val.replace(/\t/g, " ");
+            val = val.replace(/"/g, '\"');
+            val = val.replace(/\n/g, ' ');
+            val = val.replace(/\\/g, '\\\\');
+            return val;
+        },
+        validate: function (err) {
+            var $target = this;
+            var rule = $target.attr("valid-rule");
+            var val = $target.sval();
+            var re = new RegExp(rule);
+
+            if (re.test(val)) {
+                $target.removeClass("inp-err");
+                return true;
+            } else {
+                if (err) {
+                    $target.addClass("inp-err");
+                }
+                return false;
+            }
+        }
+    });
+
+    var tabFoucs = true;
+
+function checkCouponValidity(){
+    var te=Number($("#inp-timeleft").val());
+    var te2=Number($("#inp-spot-timeleft").val());
+    var flag=false;
+    if(te>24*60*60*1000){
+        $(".offer").hide();
+    }else{
+        startCounter("#coupontime",(24*60*60*1000)-te);
+    }
+    if(te2>6*60*60*1000){
+        $(".offer2").hide();
+
+    }else{
+        startCounter("#spot-coupontime",(6*60*60*1000)-te2);
+    }
+}
+ function startCounter(el,timeLeft){
+    var tl=getDuration(timeLeft);
+    $(el).html(" "+tl.hours+" hrs "+" "+tl.minutes+" min "+tl.seconds+" sec");
+
+    if(timeLeft<0){
+        $(".offer").hide();
+    }else{
+        setTimeout(function(){
+            startCounter(el,timeLeft-1000);
+        },1000);
+    }
+}
+
+
+    var getDuration = function(ms){
+        x = ms / 1000;
+        seconds = Math.floor(x % 60);
+        x /= 60;
+        minutes = Math.floor(x % 60);
+        x /= 60;
+        hours = Math.floor(x % 24);
+        x /= 24;
+        days = x;
+        return {
+            seconds:seconds,
+            minutes:minutes,
+            hours:hours
+        }
+    };
+
+    $(function () {
+        $(window).focus(function () {
+            tabFoucs = true;
+        });
+        $(window).blur(function () {
+            tabFoucs = false;
+        });
+        fillForm({"person":[],"propertytype":"Flat","area":"","serveytype":"","serveyno":"","bname":"","fno":"","flno":"","sector":"","location":"","city":"","pin":"","use":"","fan":"","tubelight":"","bed":"","sofa":"","table":"","chair":"","ac":"","gyeser":"","clauses":[],"rent":"","duration":"11","deposite":"","mode":"Cash","bank":"","branch":"","transactionid":"","transactiondate":"","refundable":"Refundable","startdate":"","paidby":"Licensee and Licensor","lockin":"0","appointmentAddress":"","plan":"","appliedCode":"","appliedAmount":""},function(){
+            $("#tabs").show();
+        });
+        checkCouponValidity();
+
+    });
+
+
+
+
+    $(".rent-row input, #inp-duration").on('keyup', function (e) {
+        varingRentValidate();
+        $(".fromToRentError").hide();
+    });
+    $("#inp-deposit, #inp-duration, #inp-plan").on('keyup', function () {
+        $(this).validate();
+        //$(".inp-rent")[0].value = $("#inp-rent").sval();
+        $(".inp-to")[0].value = $("#inp-duration").sval();
+    });
+    function varingRentValidate(err) {
+        var rentSlab = {
+            valid: false,
+            slab: []
+        };
+        $(".rent-row").each(function () {
+            var flag = false,
+                slab = {};
+            if ($(this).prev().length == 0) {
+                flag = true;
+            } else {
+                flag = validateRow($(this).prev(), err);
+            }
+            $(this).find("input").each(function () {
+                $(this).removeClass("inp-err");
+                if (flag) {
+                    if ($(this).attr("data-name") != "FromMonth") {
+                        $(this).attr("disabled", false);
+                    }
+                } else {
+                    $(this).attr("disabled", true);
+                    $(this).val("");
+                }
+                slab[$(this).attr("data-name")] = Number($(this).sval());
+            });
+            if (slab.FromMonth > 0 && slab.ToMonth < (Number($("#inp-duration").sval()) + 1) && slab.MonthlyRent > 0) {
+                rentSlab.slab.push(slab);
+            }
+        });
+        if (rentSlab.slab.length > 0 && rentSlab.slab[rentSlab.slab.length - 1].ToMonth && rentSlab.slab[rentSlab.slab.length - 1].ToMonth == Number($("#inp-duration").sval())) {
+            rentSlab.valid = true;
+        }
+
+        $("#dataSlabList").html("<li><b><u>Rent Details</u></b></li><br>");
+        for(var i=0; i<rentSlab.slab.length; i++){
+            var fromMonth = rentSlab.slab[i].FromMonth;
+            var toMonth = rentSlab.slab[i].ToMonth;
+            if(fromMonth < 10){
+                fromMonth = "0"+fromMonth;
+            }
+            if(toMonth < 10){
+                toMonth = "0"+toMonth;
+            }
+            var slabListItem = '<li>'+(i+1)+'. From Month : '+fromMonth+' To Month : '+toMonth+' Rent : '+rentSlab.slab[i].MonthlyRent+'</li>';
+            $("#dataSlabList").append($(slabListItem));
+        }
+
+        return rentSlab;
+    }
+    function validateRow(el, err) {
+        var from = parseInt(Number(el.find("[data-name='FromMonth']").sval())),
+            to = parseInt(Number(el.find("[data-name='ToMonth']").sval())),
+            rent = parseInt(Number(el.find("[data-name='MonthlyRent']").sval()));
+        if (to > 0 && to > from && to < Number($("#inp-duration").sval()) && rent > 0) {
+            el.next().find("[data-name='FromMonth']").val(to + 1);
+            return true;
+        } else {
+            if (err && from > 0) {
+                if (!rent || rent <= 0) {
+                    el.find("[data-name='MonthlyRent']").addClass("inp-err");
+                }
+				if (!(to <= Number($("#inp-duration").sval()))) {
+                	el.find("[data-name='ToMonth']").addClass("inp-err");
+            	}
+            }
+            return false;
+        }
+    }
+    function checkRentSlabs() {
+        var flag = true;
+        var rentSlab = varingRentValidate(true);
+        if (rentSlab.valid) {
+            $(".rent-row input").removeClass("inp-err");
+        } else {
+            flag = false;
+        }
+        if (!$("#inp-duration").validate(true)) {
+            flag = false;
+        }
+        return flag;
+    }
+    function calculateCharges() {
+        var registrationCharges = 1000,
+            stampDuty = calculateStampDuty(),
+            serviceCharges = calculateServiceCharges(),
+            paymentReceived = Number($("#inp-amount-received").sval());
+		var addOnsValue = Number($("#inp-add-ons-value").val());
+
+        var paymentGatewayCharges = Math.ceil(((registrationCharges + stampDuty + serviceCharges + addOnsValue) / 98) * 2);
+        var sgst = calculateTax(serviceCharges + paymentGatewayCharges + addOnsValue);
+        var cgst = calculateTax(serviceCharges + paymentGatewayCharges + addOnsValue);
+        var actualTotalAmount = registrationCharges + serviceCharges + stampDuty + addOnsValue + sgst + cgst + paymentGatewayCharges;
+        var totalAmount = actualTotalAmount;
+
+        if(totalAmount < paymentReceived){
+            totalAmount = paymentReceived;
+        }
+        var remainingAmount = totalAmount - paymentReceived;
+
+        $(".sp-total-amount").html(totalAmount);
+        $(".sp-received-amount").html(paymentReceived);
+        $(".sp-remaining-amount").html(remainingAmount);
+
+        $("#post-stamp-duty").val(stampDuty);
+        $("#post-service-charges").val(serviceCharges);
+        $("#post-total-amount").val(totalAmount);
+        if(paymentReceived>0){
+            $(".div-appointment").show();
+            //$(".div-payment").show();
+        }else{
+            $(".div-payment-link").show();
+        }
+    }
+    function calculateStampDuty() {
+        var rentSlab = varingRentValidate();
+        var deposit = Number($("#deposite").sval());
+        if (rentSlab.valid) {
+            var rentDetails = rentSlab.slab;
+            var duration = 0,
+                totalRent = 0,
+                stampDuty = 0;
+            for (var i = 0; i < rentDetails.length; i++) {
+                if (duration < rentDetails[i].ToMonth) {
+                    duration = rentDetails[i].ToMonth;
+                }
+                totalRent += ((rentDetails[i].MonthlyRent) * (rentDetails[i].ToMonth + 1 - rentDetails[i].FromMonth));
+            }
+            stampDuty = Math.ceil(totalRent * 0.0025) + Math.ceil((Number(deposit) * 0.1 * 0.0025 / 12) * duration);
+            if (stampDuty < 100) {
+                stampDuty = 100;
+            }
+            return stampDuty;
+        } else {
+            return 0;
+        }
+    }
+    function calculateServiceCharges() {
+        var serviceCharges = 0;//,
+            //discount = Number($("#inp-coupon-amount").sval());
+            discount = Number($("#inp-coupon-amount").sval());
+        var planValue = $("#inp-plan").val();
+
+        if(planValue == "basic") {
+            $(".sp-plan").html("Basic");
+            serviceCharges = Number($("#inp-basic-charges").val());
+        }else if(planValue == "premium"){
+            $(".sp-plan").html("Premium");
+            serviceCharges = Number($("#inp-premium-charges").val());
+        }else if(planValue == "deluxe"){
+            $(".sp-plan").html("Deluxe");
+            serviceCharges = Number($("#inp-deluxe-charges").val());
+        }
+        var calculatedServiceCharges = serviceCharges - discount;
+        if(calculatedServiceCharges < 0){
+            calculatedServiceCharges = 0;
+        }
+        return calculatedServiceCharges;
+    }
+    function calculateTax(amount) {
+        return Math.ceil(amount * 0.09);
+    }
+
+    calculateCharges();
+
+    function createNewAgreement(){
+        var amountRemaining = Number($("#inp-remaining-amount").val());
+        if(amountRemaining> 0){
+            alert("Please make sure you pay remaining amount of the current document.");
+        }else{
+            window.location = "/unfreez.php";
+        }
+    }
+
+    function sessionId() {
+        function s4() {
+            return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+        }
+
+        return this.origin+"/"+s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+	}
+
+	function showPeople(el){
+		checkLimit();
+		$("#div-alert-msg").hide();
+		if(showPeople.done) return;
+		var json=JSON.parse($(el).attr("data-json"));
+		var docno=$("#inp-docno").val();
+		var token=$("#inp-ptoken").val();
+		// var link=$("#inp-share-link").val();
+
+		// var str='<p style="display: block;width:200px;margin: auto;padding: 15px;background: #ecf0f1;color:#2c3e50;text-decoration: none;text-align: center;">'+link+'</p>';
+		// $("#link").append(str);
+		var str='';
+		str='<table class="table"><thead><tr><th>Name</th><th>Phone</th><th>Email</th></tr></thead><tbody>';
+		for(var i=0;i<json.person.length;i++){
+			str+='<tr><td>'+json.person[i].fname+' '+json.person[i].lname+'</td><td>'+json.person[i].phone+'</td><td>'+json.person[i].email+'</td></tr>';
+		}
+		str+='</tbody></table>';
+		$("#div-people-details").append(str);
+		showPeople.done = true;
+	}
+
+	function checkLimit(){
+		var docno=$("#inp-docno").val();
+		var token=$("#inp-ptoken").val();
+		$.ajax({
+			type: 'POST',
+			data: 'doc='+docno,
+			url: 'send_email.php',
+			success: function (res) {
+				$("#count").text(res.mailCount);
+				if(Number(res.mailCount)==5){
+					$(".people-details").hide();
+					$("#err-limit").fadeIn();
+					$(".share-footer").hide();
+				}
+			}
+		});
+	}
+
+	function sendEmail(el){
+		// if(sendEmail.done) return;
+		$("#div-alert-msg").fadeIn();
+		setTimeout(() => {
+			$("#emailModal").modal('hide');
+		}, 1000);
+		var docno=$("#inp-docno").val();
+		var token=$("#inp-ptoken").val();
+		$.ajax({
+			type: 'POST',
+			data: 'doc='+docno+'&token='+token,
+			url: 'send_email.php',
+			success: function (res) {
+                if (res.status == "success") {
+
+				}else{
+					$("#div-alert-msg").hide();
+					$(".mail").remove();
+					$("#send-email").remove();
+				}
+			}
+		});
+		// sendEmail.done = true;
+	}
+
+
+    $(function () {
+
+    });
+
+    $("#cbEx1").on('click',function(e){
+        if(e.target.checked){
+            addAdvanceClause(1, "The Licensor hereby declares that : <br/>There are no outstanding amounts payable by the Licensor in respect of payments towards electricity, telephone, taxes or any other dues up to the date of granting the licenses.");
+            extraClauses.clause1 = "include";
+        }else{
+            removeAdvanceClause(1);
+            extraClauses.clause1 = "exclude";
+        }
+    });
+    $("#cbEx2").on('click',function(e){
+        if(e.target.checked){
+            addAdvanceClause(2, "The Licensee hereby declares and undertakes they shall not : <br>a. Conduct or allow to be conducted, any illegal or unlawful activities in the licensed premises. <br>b. Store or allow to be stored in the Licensed Premises, any combustible, dangerous or hazardous material that may imperil the safety of the building or may increase the premium of insurance of the building or render void the insurance and/or which may be of nuisance and/or cause annoyance to the Licensed premises and/or the Licensor and/or the other occupants in the locality. <br>c. Encumber, create any liability or induct any third party in the licensed premises. <br>d. Claim any right, title or interest in the licensed premises or any part thereof. Do or omit to do anything to jeopardise or frustrate the title of the Licensor to the licensed premises. <br>e. The Licensee shall use the said flat in such a way as not to contravene any law, rule, and regulations, Bye-laws of Government, Municipality, Society and/or any other Public Body or Authority. If any claim arises on account of any omission or commission by the Licensee at the licensed premises, the Licensee above shall be responsible for the same and the Licensor shall not be responsible. <br>f. To vacate the Licensed Premises after removing all his/her belongings, on the expiry of the License period and/or on sooner determination and to restore the Licensed Premises in the same state and condition in which it is at the date of the License.");
+            extraClauses.clause2 = "include";
+        }else{
+            removeAdvanceClause(2);
+            extraClauses.clause2 = "exclude";
+        }
+    });
+    $("#cbEx3").on('click',function(e){
+        if(e.target.checked){
+            addAdvanceClause(3, "In case, where the premises are not vacated by the Licensee, on the termination of the lease period, the Licensee will pay damages calculated twice the rent for any period of occupation commencing from the expiry of the lease period. The payment of damages as aforesaid will not preclude the Licensor from initiating legal proceedings against the Licensee for the same.");
+            extraClauses.clause3 = "include";
+        }else{
+            removeAdvanceClause(3);
+            extraClauses.clause3 = "exclude";
+        }
+    });
+    $("#cbEx4").on('click',function(e){
+        if(e.target.checked){
+            addAdvanceClause(4, "If the Licensee fails to pay the monthly rent for a continuous period of two months, or if the Licensee fails to abide by any of the covenants above, the Licensor may terminate the lease.");
+            extraClauses.clause4 = "include";
+        }else{
+            removeAdvanceClause(4);
+            extraClauses.clause4 = "exclude";
+        }
+    });
+    $("#cbEx5").on('click',function(e){
+        if(e.target.checked){
+            addAdvanceClause(5, "The Security deposit shall be refunded by the Licensor to the Licensee at the time of handing over possession of the Leased Premises by the Licensee upon expiry or sooner termination of this lease after adjusting the dues (if any) or cost towards damages caused by the negligence of the Licensee or the person he/she is responsible for. This excludes normal wear & tear and damages due to act of god. No interest shall be paid on the deposit amount.");
+            extraClauses.clause5 = "include";
+        }else{
+            removeAdvanceClause(5);
+            extraClauses.clause5 = "exclude";
+        }
+    });
+    $("#cbEx6").on('click',function(e){
+        if(e.target.checked){
+            addAdvanceClause(6, "In case the Licensor fails to refund the security deposit to the Licensee on early termination or expiry of the lease agreement, the Licensee is entitled to hold possession of the leased premises, without payment of rent and/or any other charges whatsoever, till such time the Licensor refunds the security deposit to the Licensee. This is in addition to the other legal remedies available to the Licensee to recover the amount from the Licensor.");
+            extraClauses.clause6 = "include";
+        }else{
+            removeAdvanceClause(6);
+            extraClauses.clause6 = "exclude";
+        }
+    });
+    $("#cbEx7").on('click',function(e){
+        if(e.target.checked){
+            addAdvanceClause(7, "The Licensor shall get the \"Leased Premises\" painted and cleaned at the time of handing over possession to the Licensee. The Licensee shall pay to the Licensor the painting charges or get the premises painted and cleaned on termination of lease and vacating the premises.");
+            extraClauses.clause7 = "include";
+        }else{
+            removeAdvanceClause(7);
+            extraClauses.clause7 = "exclude";
+        }
+    });
+    $("#cbEx8").on('click',function(e){
+        if(e.target.checked){
+            addAdvanceClause(8, "The Licensee shall strictly cook only vegetarian food within the Leased Premises.");
+            extraClauses.clause8 = "include";
+        }else{
+            removeAdvanceClause(8);
+            extraClauses.clause8 = "exclude";
+        }
+    });
+    $("#cbEx9").on('click',function(e){
+        if(e.target.checked){
+            addAdvanceClause(9, "Tenant will do clean and peaceful handover of property at the time of evacuation, otherwise will be charged penalty of Rs 2000 or actual expense for property maintenance whichever is higher.");
+            extraClauses.clause9 = "include";
+        }else{
+            removeAdvanceClause(9);
+            extraClauses.clause9 = "exclude";
+        }
+    });
+    $("#cbEx10").on('click',function(e){
+        if(e.target.checked){
+            addAdvanceClause(10, "The Licensee hereby undertakes and agrees that without the prior written consent of the Licensor he will not obtain/get transferred any Landline telephone connection at the said premises and/or will also not obtain a Ration card, Passport, Adhaar Card , Driving License, Financial loan from individual or any Institutions/Banks, Credit card or any other such legal documents showing the address of the said premises, at the address of the above said premises.");
+            extraClauses.clause10 = "include";
+        }else{
+            removeAdvanceClause(10);
+            extraClauses.clause10 = "exclude";
+        }
+    });
+
+
+    $("#cbEx11").on('click',function(e){
+        if(e.target.checked){
+            addAdvanceClause(11, "Both the Parties agreed , That if (Licensee & Licensor) decides   renewal of leased / Leave & License / Sale contract to the same  party (Licensee & Licensor) shall be liable for Brokerage, by making & registering new leave / lease license / Sale agreement with new terms & conditions.");
+            extraClauses.clause11 = "include";
+        }else{
+            removeAdvanceClause(11);
+            extraClauses.clause11 = "exclude";
+        }
+    });
+
+
+    $("#cbEx12").on('click',function(e){
+        if(e.target.checked){
+            addAdvanceClause(12, "NOTICE any notice sent under this Agreement to other party shall be deemed to be validly served if sent by Registered A.D. Post/ Email or Hand Delivery duly acknowledged at the respective address of the parties herein above mentioned address.");
+            extraClauses.clause12 = "include";
+        }else{
+            removeAdvanceClause(12);
+            extraClauses.clause12 = "exclude";
+        }
+    });
+
+
+
+	var socket = io.connect('https://legaldocs.co.in:5006/',{
+        query:"prospectId=&url=draft&userType=prospect&product=register_rent_agreement&assist="+$("#inp-assist-phone").val()
+    });
+</script>
+
+<div id="ZXlgyWL-1562260211453" class="" style="display: none !important;">
+    <iframe id="uTnDFED-1562260211460" src="./Agreement Draft_files/saved_resource.html" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: auto !important; right: auto !important; bottom: auto !important; left: auto !important; position: static !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 350px !important; height: 520px !important; z-index: 999999 !important; cursor: auto !important; float: none !important; border-radius: unset !important; display: none !important;"></iframe>
+    <iframe id="YQPTyAF-1562260211473" src="./Agreement Draft_files/saved_resource(1).html" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; position: fixed !important; border: 0px !important; padding: 0px !important; transition-property: none !important; z-index: 1000001 !important; cursor: auto !important; float: none !important; box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 10px 0px !important; height: 60px !important; min-height: 60px !important; max-height: 60px !important; width: 60px !important; min-width: 60px !important; max-width: 60px !important; border-radius: 50% !important; transform: rotate(0deg) translateZ(0px) !important; transform-origin: 0px center !important; margin: 0px !important; top: auto !important; bottom: 20px !important; right: 20px !important; left: auto !important; display: block !important;"></iframe>
+    <iframe id="M5Mib3F-1562260211474" src="./Agreement Draft_files/saved_resource(2).html" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; position: fixed !important; border: 0px !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; display: none !important; z-index: 1000003 !important; cursor: auto !important; float: none !important; border-radius: unset !important; top: auto !important; bottom: 60px !important; right: 15px !important; left: auto !important; width: 21px !important; max-width: 21px !important; min-width: 21px !important; height: 21px !important; max-height: 21px !important; min-height: 21px !important;"></iframe><div class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: auto !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 100% !important; display: none !important; z-index: 1000001 !important; cursor: move !important; float: left !important; border-radius: unset !important;"></div>
+    <div id="bKssGg5-1562260211454" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: auto !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 6px !important; height: 100% !important; display: block !important; z-index: 999998 !important; cursor: w-resize !important; float: none !important; border-radius: unset !important;"></div>
+    <div id="WoUL3ML-1562260211455" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: 0px !important; bottom: auto !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 6px !important; display: block !important; z-index: 999998 !important; cursor: n-resize !important; float: none !important; border-radius: unset !important;"></div>
+    <div id="lI3CTBv-1562260211456" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: auto !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999998 !important; cursor: nw-resize !important; float: none !important; border-radius: unset !important;"></div>
+    <iframe id="iVjxR98-1562260212153" src="./Agreement Draft_files/saved_resource(3).html" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; position: fixed !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 378px !important; height: 503px !important; display: none !important; z-index: 999999 !important; cursor: auto !important; float: none !important; border-radius: unset !important; bottom: 100px !important; top: auto !important; right: 20px !important; left: auto !important;"></iframe></div>
+</body>
+</html>

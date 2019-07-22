@@ -1,0 +1,26 @@
+
+  {% load static %}
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav sm" data-smartmenus-id="15622607412504255">
+<li><a href="/">Home</a></li>
+ <li><a href="/aboutus">About Us</a></li>
+         <li><a href="#" class="has-submenu">Legal Documents Formats<span class="sub-arrow"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="{% static 'main/files/sale_deed_agri.pdf' %}" target="_new">Sale Deed AgricultureLand Form</a></li>
+                <li><a href="{% static 'main/files/sale_deed_flat.pdf' %}" target="_new">Sale Deed Flat Form</a></li>
+                <li><a href="/{% static 'main/files/sale_deed_plot.pdf' %}" target="_new">Sale Deed Plot Form</a></li>
+                <li><a href="{% static 'main/files/sale_deed_house.pdf' %}" target="_new">Sale Deed House Form</a></li>
+
+            </ul>
+        </li>
+        {% if user.is_authenticated %}
+            <li><a href="/services">Services</a></li>
+             <li><a href="/account">{{user.username|title}}</a></li>
+             <li><a href="/logout">Logout</a></li>
+        {% else %}
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+        {% endif %}
+  <li><a href="/contactus">Contact Us</a></li>
+    </ul>
+</div>
